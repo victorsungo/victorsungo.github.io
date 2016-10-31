@@ -96,7 +96,7 @@ $ npm install
 </ul>
 <hr>
 <h2 id="3-更换NexT主题"><a href="#3-更换NexT主题" class="headerlink" title="3.更换NexT主题"></a>3.更换NexT主题</h2><p>关于NexT:<br>NexT是一个流行的Hexo主题，开发者赋予其主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
-<font size="3"><strong>需要注意的是，配置文件<code>_config.yml</code>其实有两个，分别位于<code>C:\blog</code>和<code>C:\blog\source\themes</code>目录下，前者为<code>站点配置文件</code>，后者为<code>主题配置文件</code>。</strong></font>
+<font size="3"><strong>需要注意的是，配置文件<code>_config.yml</code>其实有两个，分别位于<code>C:\blog</code>和<code>C:\blog\source\themes</code>目录下，前者为<code>站点配置文件</code>，后者为<code>主题配置文件</code>。我的<br>博客的这两个配置文件已经上传到GitHub中的<a href="https://github.com/victorsungo/config2github" target="_blank" rel="external">config2github</a>仓库中，可以作为参考</strong></font>
 
 <ul>
 <li>下载NexT<br>Hexo的默认主题是landscape.其实Hexo提供了丰富色彩的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>供我们下载使用。这里我使用的是NexT，下载稳定版本可以按照如下操作：<ul>
