@@ -481,7 +481,7 @@ F_a + F_b = F_c$$</span><!-- Has MathJax -->
 <ul>
 <li>安装Hexo<br>得益于我们之前的准备工作，Git和Node.js均已经配置好，可以直接下载Hexo.<br>在 Git Bash 中输入如下代码<pre><code>$ npm install -g hexo-cli   
 </code></pre></li>
-<li>初始化<br>选择一个盘(如 C:)建立你的博客本机存储文件夹（如 blog:），在此文件夹空白处右击选择 Git Bash Here（或者<code>$ cd C:\blog</code>）进入blog文件夹进行git操作，接下来：<pre><code>$ hexo init
+<li>初始化<br>选择一个盘(如 C:)建立你的博客本机存储文件夹（如 blog:），在此文件夹空白处右击选择 Git Bash Here（或者<code>$ cd C:\blog</code>进入blog文件夹）进行git操作，接下来：<pre><code>$ hexo init
 $ npm install
 </code></pre></li>
 <li>配置站点<br>即建立本地文件与GitHub的Repository之间的联系，使用 <a href="https://notepad-plus-plus.org/" target="_blank" rel="external">Notepad++</a> 打开<code>C:\blog\_config.yml</code>文件，拉到文件最下方的<strong>deploy</strong>进行如下配置：<pre><code>deploy:
@@ -505,7 +505,11 @@ $ npm install
 <pre><code>$ hexo deploy  (或简写为 $ hexo d)
 </code></pre><p>此时会先后出现两个界面，输入注册GitHub账号和密码。<br><strong>应注意的是：如果在本地预览时发生修改操作，需要重新<code>$ hexo g</code>之后再<code>$ hexo d</code></strong></p>
 <ul>
-<li>访问网站<br>上面的所有流程完成后，博客就已经搭建并发布到GitHub上了，在浏览器输入<code>david.github.io</code>并访问，就可以看到你的博客了。<br><strong>小结</strong><br>在环境配置好以后，我们每次发表博文的过程如下：</li>
+<li>访问网站<br>上面的所有流程完成后，博客就已经搭建并发布到GitHub上了，在浏览器输入<code>david.github.io</code>并访问，就可以看到你的博客了。</li>
+</ul>
+<blockquote>
+<p><strong>小结</strong><br>在环境配置好以后，我们每次发表博文的过程如下：</p>
+<ul>
 <li>用简书编辑好Markdown博文放到<code>C:\blog\source\_post</code>文件夹</li>
 <li><code>$ hexo g</code> 生成静态页面</li>
 <li><code>$ hexo s</code> 启动本地服务器，在<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>预览</li>
@@ -513,7 +517,8 @@ $ npm install
 <li>访问网站</li>
 </ul>
 <hr>
-<h2 id="3-更换NexT主题"><a href="#3-更换NexT主题" class="headerlink" title="3.更换NexT主题"></a>3.更换NexT主题</h2><p>关于NexT:<br>NexT是一个流行的Hexo主题，开发者赋予其主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
+<h2 id="3-更换NexT主题"><a href="#3-更换NexT主题" class="headerlink" title="3.更换NexT主题"></a>3.更换NexT主题</h2></blockquote>
+<p>关于NexT:<br>NexT是一个流行的Hexo主题，开发者赋予其主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
 <font size="3"><strong>需要注意的是，配置文件<code>_config.yml</code>其实有两个，分别位于<code>C:\blog</code>和<code>C:\blog\source\themes</code>目录下，前者为<code>站点配置文件</code>，后者为<code>主题配置文件</code>。我的博客的这两个配置文件已经上传到我的GitHub中的<a href="https://github.com/victorsungo/config2github" target="_blank" rel="external">config2github</a>仓库中，可以作为参考</strong></font>
 
 <ul>
