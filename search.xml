@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[LaTex]]></title>
+      <url>http://yoursite.com/2016/10/31/latex/</url>
+      <content type="html"><![CDATA[<span>$F_{\mu}$</span><!-- Has MathJax -->
+<span>$$F_a + F_b = F_c$</span><!-- Has MathJax -->
+<span>$$\begin{aligned}
+\dot{x} &amp; = \sigma(y-x) \\
+\dot{y} &amp; = \rho x - y - xz \\
+\dot{z} &amp; = -\beta z + xy
+\end{aligned}$$</span><!-- Has MathJax -->]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[GitHub+Hexo+NexT 搭建博客]]></title>
+      <url>http://yoursite.com/2016/10/31/creat%20blog/</url>
+      <content type="html"><![CDATA[<h2 id="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。"><a href="#前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。" class="headerlink" title="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。"></a>前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。</h2><hr>
+<h2 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1.环境配置"></a>1.环境配置</h2><h4 id="环境配置主要包括：创建GitHub仓库、安装git、安装node-js"><a href="#环境配置主要包括：创建GitHub仓库、安装git、安装node-js" class="headerlink" title="环境配置主要包括：创建GitHub仓库、安装git、安装node.js"></a>环境配置主要包括：创建GitHub仓库、安装git、安装node.js</h4><blockquote>
+<p>创建GitHub仓库，建立GitHub Pages</p>
+</blockquote>
+<p>关于Github:<br>GitHub是一个远程仓库，一个开源协作社区，更重要的是：它是免费的！</p>
+<ul>
+<li>首先需要创建一个<a href="https://github.com/" target="_blank" rel="external">GitHub</a>账户，我们假设你的账户名称为 david ,易于后面的演示。GitHub 邮箱也要通过验证才行。</li>
+<li>然后再创建一个GitHub仓库：点击GitHub界面右上角的+，然后点击<code>New repository</code> 创建仓库，<strong> 切记 </strong><code>Repository name</code>一定得是“GitHub账号.github.io ”的形式，在这里为<code>david.github.io</code>，因为GitHub规定这样命名形式才能作为网络站点的托管仓库。</li>
+<li>到这里，博客网站就有自己温馨的港湾啦。</li>
+</ul>
+<blockquote>
+<p>安装Git</p>
+</blockquote>
+<p>关于Git:<br>Git是一个开源的分布式版本控制系统，可以有效、高速的处理各种类型的项目版本管理。它还支持离线工作，适合多人分布式开发。</p>
+<ul>
+<li>至于如何下载、安装、使用Git，廖雪峰老师在他的<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000" target="_blank" rel="external">Git教程</a>里面已经讲述的很详细了，我也是在此学习的，另外也推荐<a href="http://iissnan.com/progit/" target="_blank" rel="external">Pro Git</a>的电子版。</li>
+<li>到这里，就已经默认你已经安装好配置好Git了~</li>
+</ul>
+<blockquote>
+<p>安装Node.js</p>
+</blockquote>
+<p>关于Node.js:<br> Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。</p>
+<ul>
+<li>去<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网下载</li>
+<li>安装保持默认并一路 next 即可</li>
+</ul>
+<p>到这里，环境配置过程已经完成了。</p>
+<hr>
+<h2 id="2-安装Hexo，并部署网站"><a href="#2-安装Hexo，并部署网站" class="headerlink" title="2.安装Hexo，并部署网站"></a>2.安装Hexo，并部署网站</h2><p>关于Hexo：</p>
+<ul>
+<li>A fast, simple &amp; powerful blog framework, powered by Node.js<ul>
+<li>Blazing fast generating</li>
+<li>Support for GitHub Flavored Markdown and most Octopress plugins</li>
+<li>One-command deploy to GitHub Pages, Heroku, etc.</li>
+<li>Powerful plugin system</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Hexo博客框架初始化</p>
+</blockquote>
+<ul>
+<li>安装Hexo<br>得益于我们之前的准备工作，Git和Node.js均已经配置好，可以直接下载Hexo.<br>在 Git Bash 中输入如下代码<pre><code>$ npm install -g hexo-cli   
+</code></pre></li>
+<li>初始化<br>选择一个盘(如 C:)建立你的博客本机存储文件夹（如 blog:），在此文件夹空白处右击选择 Git Bash Here（或者<code>$ cd C:\blog</code>）进入blog文件夹进行git操作，接下来：<pre><code>$ hexo init
+$ npm install
+</code></pre></li>
+<li>配置站点<br>即建立本地文件与GitHub的Repository之间的联系，使用 <a href="https://notepad-plus-plus.org/" target="_blank" rel="external">Notepad++</a> 打开<code>C:\blog\_config.yml</code>文件，拉到文件最下方的<strong>deploy</strong>进行如下配置：<pre><code>deploy:
+    type: git
+    repository: https://github.com/david/david.github.io.git
+    branch: master
+</code></pre><strong>其中</strong>，需要注意两点：第一， <code>repository:</code>和<code>branch:</code>均须自行添加；第二，Hexo的所有配置文件中的<code>:</code>后面均需要添加一个<strong>空格</strong>才可以书写，否则会出现<code>ERROR Deployer not found : git</code>的错误！</li>
+<li>写第一篇博文<br>博文名称为《My First Blog》，代码：<pre><code>$ hexo new &quot;My First Blog&quot;
+</code></pre>此时会发现在<code>C:\blog\source\_post</code>里面出现了<code>My First Blog.md</code>文件，这个<code>_post</code>就是存储博文的文件夹。<ul>
+<li>这里写作博文建议使用<a href="http://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">Markdown</a> ，写作工具可以用<a href="http://www.jianshu.com/" target="_blank" rel="external">简书</a>(强烈建议:支持在线预览模式)或者<a href="http://www.sublimetext.com/2" target="_blank" rel="external">Sublime Text 2</a>，Markdown是一种轻量级的标记语言，语法十分简单，可以参考<a href="http://www.jianshu.com/p/1e402922ee32" target="_blank" rel="external">Markdown——入门指南</a>进行学习，只需五分钟奥~</li>
+</ul>
+</li>
+<li>生成静态页面<pre><code>$ hexo generate  (或简写为 $ hexo g)
+</code></pre>此时<code>My First Blog.md</code>已经在<code>C:\blog\source\public</code>文件夹里生成了博客网站的静态文件。</li>
+<li>启动本地服务器<pre><code>$ hexo server  (或简写为 $ hexo s)
+</code></pre>用浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>，此时，你将会看到一个主题是landscape的博客(简直不忍直视……)，下面我们将介绍另外一个优美简约的主题：NexT</li>
+</ul>
+<blockquote>
+<p>部署本地网站到GitHub</p>
+</blockquote>
+<pre><code>$ hexo deploy  (或简写为 $ hexo d)
+</code></pre><p>此时会先后出现两个界面，输入注册GitHub账号和密码。</p>
+<ul>
+<li>访问网站<br>上面的所有流程完成后，博客就已经搭建并发布到GitHub上了，在浏览器输入<code>david.github.io</code>并访问，就可以看到你的博客了。</li>
+</ul>
+<h3 id="小结："><a href="#小结：" class="headerlink" title="小结："></a><em>小结：</em></h3><p>在环境配置好以后，我们每次发表博文的过程如下：</p>
+<ul>
+<li>用简书编辑好Markdown博文放到<code>C:\blog\source\_post</code>文件夹</li>
+<li><code>$ hexo g</code> 生成静态页面</li>
+<li><code>$ hexo s</code> 启动本地服务器，在<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>预览</li>
+<li><code>$ hexo d</code> 部署网站到Github</li>
+<li>访问网站</li>
+</ul>
+<hr>
+<h2 id="3-更换NexT主题"><a href="#3-更换NexT主题" class="headerlink" title="3.更换NexT主题"></a>3.更换NexT主题</h2><p>关于NexT:<br>NexT是一个流行的Hexo主题，开发者赋予其主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
+<h5 id="需要注意的是，配置文件-config-yml其实有两个，分别位于C-blog和C-blog-source-themes目录下，前者为站点配置文件，后者为主题配置文件。"><a href="#需要注意的是，配置文件-config-yml其实有两个，分别位于C-blog和C-blog-source-themes目录下，前者为站点配置文件，后者为主题配置文件。" class="headerlink" title="需要注意的是，配置文件_config.yml其实有两个，分别位于C:\blog和C:\blog\source\themes目录下，前者为站点配置文件，后者为主题配置文件。"></a>需要注意的是，配置文件<code>_config.yml</code>其实有两个，分别位于<code>C:\blog</code>和<code>C:\blog\source\themes</code>目录下，前者为<code>站点配置文件</code>，后者为<code>主题配置文件</code>。</h5><ul>
+<li>下载NexT<br>Hexo的默认主题是landscape.其实Hexo提供了丰富色彩的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>供我们下载使用。这里我使用的是NexT，下载稳定版本可以按照如下操作：<ul>
+<li>前往<a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="external">Hexo版本发布页面</a></li>
+<li>选择你所需要的版本，下载 Download 区域下的 Source Code (zip) 到本地。例如，下载 v0.4.0 版本</li>
+<li>然后copy并解压到<code>C:\blog\source\themes</code>中。建议将文件夹改为<code>next</code>，方便操作。</li>
+</ul>
+</li>
+<li>启用NexT<br>打开<strong><code>站点配置文件</code></strong>，找到<code>theme</code>字段，将其值由默认的<code>landscape</code>改为<code>next</code>，注意“:”后的空格！</li>
+<li>验证NexT<pre><code>$ hexo s
+</code></pre>然后在浏览器访问 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>，检查站点是否正确运行。</li>
+<li>个性化NexT<br>对于主题的个性化设定是通过编辑<strong><code>主题配置文件</code></strong>完成的。<br>至于具体的配置方法，在<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">NexT官网</a>已经介绍的非常详细，不再赘述。</li>
+</ul>
+<hr>
+<p>OK~ 至此，我们的博客算是基本搭建完成啦，以后可以边用边学习，一些高级的个性化和第三方服务可以在这个过程中慢慢优化。</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
