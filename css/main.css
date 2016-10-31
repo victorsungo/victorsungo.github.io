@@ -1518,7 +1518,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff7a01;
+  background: #ffcdff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2361,17 +2361,19 @@ body {
   clear: both;
 }
 .site-author-image {
-  float: center;
-  margin-right: 10px;
-  max-width: 64px;
+/*float: left;*/
+/*margin-right: 10px;*/
+  max-width: 130px;
   border-width: 1px;
   border-color: #eee;
 }
 .site-author-name {
+  text-align: center;
   margin: 0;
   font-weight: 600;
 }
 .site-description {
+  text-align: center;
   margin-top: 0;
   line-height: 1.6;
 }
