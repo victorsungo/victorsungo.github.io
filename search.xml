@@ -6,8 +6,8 @@
     <entry>
       <title><![CDATA[LaTex]]></title>
       <url>http://yoursite.com/2016/10/31/latex/</url>
-      <content type="html"><![CDATA[<span>$F_{\mu}$</span><!-- Has MathJax -->
-<span>$$F_a + F_b = F_c$</span><!-- Has MathJax -->
+      <content type="html"><![CDATA[<span>$$F_{\mu} \\
+F_a + F_b = F_c$$</span><!-- Has MathJax -->
 <span>$$\begin{aligned}
 \dot{x} &amp; = \sigma(y-x) \\
 \dot{y} &amp; = \rho x - y - xz \\
