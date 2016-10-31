@@ -75,7 +75,7 @@
 创建GitHub仓库，建立GitHub Pages
 
 关于Github:GitHub是一个远程仓库，一个开源协作社区，">
-<meta property="og:updated_time" content="2016-10-31T18:03:38.069Z">
+<meta property="og:updated_time" content="2016-10-31T18:10:39.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub+Hexo+NexT 搭建博客">
 <meta name="twitter:description" content="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。
@@ -386,7 +386,7 @@ $ npm install
 <p>部署本地网站到GitHub</p>
 </blockquote>
 <pre><code>$ hexo deploy  (或简写为 $ hexo d)
-</code></pre><p>此时会先后出现两个界面，输入注册GitHub账号和密码。</p>
+</code></pre><p>此时会先后出现两个界面，输入注册GitHub账号和密码。<br><strong>应注意的是：如果在本地预览时发生修改操作，需要重新<code>$ hexo g</code>之后再<code>$ hexo d</code></strong></p>
 <ul>
 <li>访问网站<br>上面的所有流程完成后，博客就已经搭建并发布到GitHub上了，在浏览器输入<code>david.github.io</code>并访问，就可以看到你的博客了。<br><strong>小结</strong><br>在环境配置好以后，我们每次发表博文的过程如下：</li>
 <li>用简书编辑好Markdown博文放到<code>C:\blog\source\_post</code>文件夹</li>
@@ -408,7 +408,7 @@ $ npm install
 </li>
 <li>启用NexT<br>打开<strong><code>站点配置文件</code></strong>，找到<code>theme</code>字段，将其值由默认的<code>landscape</code>改为<code>next</code>，注意“:”后的空格！</li>
 <li>验证NexT<pre><code>$ hexo s
-</code></pre>然后在浏览器访问 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>，检查站点是否正确运行。</li>
+</code></pre>然后在浏览器访问 <a href="http://localhost:4000，检查站点是否正确运行。" target="_blank" rel="external">http://localhost:4000，检查站点是否正确运行。</a></li>
 <li>个性化NexT<br>对于主题的个性化设定是通过编辑<strong><code>主题配置文件</code></strong>完成的。<br>至于具体的配置方法，在<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">NexT官网</a>已经介绍的非常详细，不再赘述。</li>
 </ul>
 <hr>
