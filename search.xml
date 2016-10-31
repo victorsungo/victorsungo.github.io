@@ -18,8 +18,7 @@ F_a + F_b = F_c$$</span><!-- Has MathJax -->
     <entry>
       <title><![CDATA[GitHub+Hexo+NexT 搭建博客]]></title>
       <url>http://yoursite.com/2016/10/31/creat%20blog/</url>
-      <content type="html"><![CDATA[<h2 id="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。"><a href="#前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。" class="headerlink" title="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。"></a>前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。</h2><hr>
-<h2 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1.环境配置"></a>1.环境配置</h2><h4 id="环境配置主要包括：创建GitHub仓库、安装git、安装node-js"><a href="#环境配置主要包括：创建GitHub仓库、安装git、安装node-js" class="headerlink" title="环境配置主要包括：创建GitHub仓库、安装git、安装node.js"></a>环境配置主要包括：创建GitHub仓库、安装git、安装node.js</h4><blockquote>
+      <content type="html"><![CDATA[<h2 id="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。"><a href="#前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。" class="headerlink" title="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。"></a>前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。</h2><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h4 id="环境配置主要包括：创建GitHub仓库、安装git、安装node-js"><a href="#环境配置主要包括：创建GitHub仓库、安装git、安装node-js" class="headerlink" title="环境配置主要包括：创建GitHub仓库、安装git、安装node.js"></a>环境配置主要包括：创建GitHub仓库、安装git、安装node.js</h4><blockquote>
 <p>创建GitHub仓库，建立GitHub Pages</p>
 </blockquote>
 <p>关于Github:<br>GitHub是一个远程仓库，一个开源协作社区，更重要的是：它是免费的！</p>
@@ -45,8 +44,7 @@ F_a + F_b = F_c$$</span><!-- Has MathJax -->
 <li>安装保持默认并一路 next 即可</li>
 </ul>
 <p>到这里，环境配置过程已经完成了。</p>
-<hr>
-<h2 id="2-安装Hexo，并部署网站"><a href="#2-安装Hexo，并部署网站" class="headerlink" title="2.安装Hexo，并部署网站"></a>2.安装Hexo，并部署网站</h2><p>关于Hexo：</p>
+<h2 id="安装Hexo，并部署网站"><a href="#安装Hexo，并部署网站" class="headerlink" title="安装Hexo，并部署网站"></a>安装Hexo，并部署网站</h2><p>关于Hexo：</p>
 <ul>
 <li>A fast, simple &amp; powerful blog framework, powered by Node.js<ul>
 <li>Blazing fast generating</li>
@@ -88,7 +86,7 @@ $ npm install
 <ul>
 <li>访问网站<br>上面的所有流程完成后，博客就已经搭建并发布到GitHub上了，在浏览器输入<code>david.github.io</code>并访问，就可以看到你的博客了。</li>
 </ul>
-<h3 id="小结："><a href="#小结：" class="headerlink" title="小结："></a><em>小结：</em></h3><p>在环境配置好以后，我们每次发表博文的过程如下：</p>
+<h2 id="小结："><a href="#小结：" class="headerlink" title="小结："></a><em>小结：</em></h2><p>在环境配置好以后，我们每次发表博文的过程如下：</p>
 <ul>
 <li>用简书编辑好Markdown博文放到<code>C:\blog\source\_post</code>文件夹</li>
 <li><code>$ hexo g</code> 生成静态页面</li>
@@ -96,9 +94,8 @@ $ npm install
 <li><code>$ hexo d</code> 部署网站到Github</li>
 <li>访问网站</li>
 </ul>
-<hr>
-<h2 id="3-更换NexT主题"><a href="#3-更换NexT主题" class="headerlink" title="3.更换NexT主题"></a>3.更换NexT主题</h2><p>关于NexT:<br>NexT是一个流行的Hexo主题，开发者赋予其主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
-<h5 id="需要注意的是，配置文件-config-yml其实有两个，分别位于C-blog和C-blog-source-themes目录下，前者为站点配置文件，后者为主题配置文件。"><a href="#需要注意的是，配置文件-config-yml其实有两个，分别位于C-blog和C-blog-source-themes目录下，前者为站点配置文件，后者为主题配置文件。" class="headerlink" title="需要注意的是，配置文件_config.yml其实有两个，分别位于C:\blog和C:\blog\source\themes目录下，前者为站点配置文件，后者为主题配置文件。"></a>需要注意的是，配置文件<code>_config.yml</code>其实有两个，分别位于<code>C:\blog</code>和<code>C:\blog\source\themes</code>目录下，前者为<code>站点配置文件</code>，后者为<code>主题配置文件</code>。</h5><ul>
+<h2 id="更换NexT主题"><a href="#更换NexT主题" class="headerlink" title="更换NexT主题"></a>更换NexT主题</h2><p>关于NexT:<br>NexT是一个流行的Hexo主题，开发者赋予其主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
+<h3 id="需要注意的是，配置文件-config-yml其实有两个，分别位于C-blog和C-blog-source-themes目录下，前者为站点配置文件，后者为主题配置文件。"><a href="#需要注意的是，配置文件-config-yml其实有两个，分别位于C-blog和C-blog-source-themes目录下，前者为站点配置文件，后者为主题配置文件。" class="headerlink" title="需要注意的是，配置文件_config.yml其实有两个，分别位于C:\blog和C:\blog\source\themes目录下，前者为站点配置文件，后者为主题配置文件。"></a>需要注意的是，配置文件<code>_config.yml</code>其实有两个，分别位于<code>C:\blog</code>和<code>C:\blog\source\themes</code>目录下，前者为<code>站点配置文件</code>，后者为<code>主题配置文件</code>。</h3><ul>
 <li>下载NexT<br>Hexo的默认主题是landscape.其实Hexo提供了丰富色彩的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>供我们下载使用。这里我使用的是NexT，下载稳定版本可以按照如下操作：<ul>
 <li>前往<a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="external">Hexo版本发布页面</a></li>
 <li>选择你所需要的版本，下载 Download 区域下的 Source Code (zip) 到本地。例如，下载 v0.4.0 版本</li>
