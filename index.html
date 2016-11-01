@@ -229,8 +229,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/10/31/latex/" itemprop="url">
-                  LaTex
+                <a class="post-title-link" href="/2016/11/01/latex/" itemprop="url">
+                  LaTex语法与实例
                 </a>
               
             
@@ -243,8 +243,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-31T23:03:07+08:00" content="2016-10-31">
-              2016-10-31
+            <time itemprop="dateCreated" datetime="2016-11-01T08:03:07+08:00" content="2016-11-01">
+              2016-11-01
             </time>
           </span>
 
@@ -273,8 +273,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/31/latex/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/latex/" itemprop="commentsCount"></span>
+                <a href="/2016/11/01/latex/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/01/latex/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -284,7 +284,7 @@
 
           
           
-             <span id="/2016/10/31/latex/" class="leancloud_visitors" data-flag-title="LaTex">
+             <span id="/2016/11/01/latex/" class="leancloud_visitors" data-flag-title="LaTex语法与实例">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -307,13 +307,189 @@
       
         
           
-            <span>$$F_{\mu} \\
-F_a + F_b = F_c$$</span><!-- Has MathJax -->
+            <p><font size="4">前言：最近没课在看一些书，博客搭好了所以想写一些笔记/分享，但是发现公式的编辑很是一个问题，怎样才能用比较简单快速的方法编辑出美观规范的数学公式呢？语法+工具</font></p>
+<h3 id="1-配置hexo-math插件"><a href="#1-配置hexo-math插件" class="headerlink" title="1.配置hexo-math插件"></a>1.配置hexo-math插件</h3><p>我使用的是NexT主题，对于大多数主题来说，推荐可以使用hexo-math插件来完成对LaTex公式的渲染。只需一步即可完成，在博客目录下Git Bash Here，并：<br><code>$ npm install hexo-math --save</code><br>是不是很省心~</p>
+<h3 id="2-常用LaTex语法"><a href="#2-常用LaTex语法" class="headerlink" title="2.常用LaTex语法"></a>2.常用LaTex语法</h3><p>在这里我按照现有的文档总结了几个实用的LaTex语法：</p>
+<blockquote>
+<p><strong>段落处理</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">操作</th>
+<th style="text-align:center">方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">空格</td>
+<td style="text-align:center">不起作用</td>
+</tr>
+<tr>
+<td style="text-align:center">换行</td>
+<td style="text-align:center">\</td>
+</tr>
+<tr>
+<td style="text-align:center">分段</td>
+<td style="text-align:center">\par</td>
+</tr>
+<tr>
+<td style="text-align:center">换页</td>
+<td style="text-align:center">\newpage</td>
+</tr>
+</tbody>
+</table>
+<p>而输出 #,$,%,&amp;,-,{,},^,~ 等字符需要前置反斜线 <code>\</code>转义。</p>
+<blockquote>
+<p><strong>西文字符转换表</strong></p>
+</blockquote>
+<p>实用为主，不赘述，可以用工具完成，工具下面会介绍</p>
+<blockquote>
+<p><strong>字号转换命令表</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">中文字号</th>
+<th style="text-align:center">控制命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">一号</td>
+<td style="text-align:center">\Huge</td>
+</tr>
+<tr>
+<td style="text-align:center">二号</td>
+<td style="text-align:center">\huge</td>
+</tr>
+<tr>
+<td style="text-align:center">三号</td>
+<td style="text-align:center">\LARGE</td>
+</tr>
+<tr>
+<td style="text-align:center">四号</td>
+<td style="text-align:center">\Large</td>
+</tr>
+<tr>
+<td style="text-align:center">小四号</td>
+<td style="text-align:center">\large</td>
+</tr>
+<tr>
+<td style="text-align:center">五号</td>
+<td style="text-align:center">\normalsize</td>
+</tr>
+<tr>
+<td style="text-align:center">小五号</td>
+<td style="text-align:center">\small</td>
+</tr>
+<tr>
+<td style="text-align:center">六号</td>
+<td style="text-align:center">\footnotesize</td>
+</tr>
+<tr>
+<td style="text-align:center">小六号</td>
+<td style="text-align:center">\scriptsize</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>页面控制命令</strong></p>
+</blockquote>
+<p>系统默认：字号10pt= 五号字；西文字体为罗马字体；textwidth=12.2cm,textheight=18.6cm。相当于美国标准信纸大小。<br>可以通过以下操作改变页面尺寸：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">\textwidth=</div><div class="line">\textheight=</div></pre></td></tr></table></figure></p>
+<h3 id="3-LaTex-公式渲染与-Markdown-渲染冲突问题"><a href="#3-LaTex-公式渲染与-Markdown-渲染冲突问题" class="headerlink" title="3.LaTex 公式渲染与 Markdown 渲染冲突问题"></a>3.LaTex 公式渲染与 Markdown 渲染冲突问题</h3><p>如LaTex 中的下划线<code>_</code>就会出现解析错误。解决方法有很多，这里介绍两种：</p>
+<ul>
+<li>将LaTex 语法公式中的所有<code>_</code>加反斜线 <code>\</code>转义，即<code>\_</code>可以解析成功。<br>但是，这样的方式将导致所有的下标都修改一遍。</li>
+<li>将公式前后的一对<code>$</code>分别换成:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">我是LaTex公式</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这种的方法实例将在5中给出。</p>
+<h3 id="4-在线LaTex编辑器"><a href="#4-在线LaTex编辑器" class="headerlink" title="4.在线LaTex编辑器"></a>4.在线LaTex编辑器</h3><p>即使掌握了LaTex语法，但是编辑公式仍然是费时费力的，这里推荐<a href="http://latex.codecogs.com/eqneditor/editor.php" target="_blank" rel="external">在线LaTex编辑器</a>，可以实现实时预览功能的同时还提供了图形辅助操作，节省了记忆和查询语法的时间。相信你在第一眼看到它的时候就会用啦~<br><strong>但是</strong>，最基本的语法还是要掌握的，工具不是万能的，有些生僻的格式还需要结合语法知识，相辅相成。</p>
+<h3 id="5-常用公式代码实例"><a href="#5-常用公式代码实例" class="headerlink" title="5.常用公式代码实例"></a>5.常用公式代码实例</h3><p>OK，用下面展示一些常用的代码实例，基本上可以满足一般的公式编辑需求，用到时套用即可。</p>
+<blockquote>
+<p>基本运算</p>
+</blockquote>
 <span>$$\begin{aligned}
 \dot{x} &amp; = \sigma(y-x) \\
 \dot{y} &amp; = \rho x - y - xz \\
 \dot{z} &amp; = -\beta z + xy
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\dot&#123;x&#125; &amp; = \sigma(y-x) \\</div><div class="line">\dot&#123;y&#125; &amp; = \rho x - y - xz \\</div><div class="line">\dot&#123;z&#125; &amp; = -\beta z + xy</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>上下标</p>
+</blockquote>
+<span>$$\begin{aligned}
+F_{0}^{n}=F_{1}^{n+1}+F_{2}^{n-1}
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">F_&#123;0&#125;^&#123;n&#125;=F_&#123;1&#125;^&#123;n+1&#125;+F_&#123;2&#125;^&#123;n-1&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>积分与求和</p>
+</blockquote>
+<span>$$\begin{aligned}
+\sum_{i=1}^{n}x_{i}=\int_{0}^{1}f(x)\mathrm{d}x
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\sum_&#123;i=1&#125;^&#123;n&#125;x_&#123;i&#125;=\int_&#123;0&#125;^&#123;1&#125;f(x)\mathrm&#123;d&#125;x</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<span>$$\begin{aligned}
+\sum_{
+1\leqslant i\leq n \atop
+1\leqslant j\leq n
+}a_{ij}
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\sum_&#123;</div><div class="line">1\leqslant i\leq n \atop</div><div class="line">1\leqslant j\leq n</div><div class="line">&#125;a_&#123;ij&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>极限</p>
+</blockquote>
+<span>$$\begin{aligned}
+\lim_{n \to \infty }\sin x_{n}=0 
 \end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\lim_&#123;n \to \infty &#125;\sin x_&#123;n&#125;=0 </div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>根式</p>
+</blockquote>
+<span>$$\begin{aligned}
+x=\sqrt[m]{1+x^{p}}
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"> &#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">x=\sqrt[m]&#123;1+x^&#123;p&#125;&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>绝对值</p>
+</blockquote>
+<span>$$\begin{aligned}
+\left | a+b \right |=\coprod_{m}^{n} \frac{e}{f}
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\left | a+b \right |=\coprod_&#123;m&#125;^&#123;n&#125; \frac&#123;e&#125;&#123;f&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>矩阵</p>
+</blockquote>
+<span>$$\begin{aligned}
+\begin{pmatrix}
+1 &amp; 3 &amp; 5 \\ 
+2 &amp; 4 &amp; 6
+\end{pmatrix}
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\begin&#123;pmatrix&#125;</div><div class="line">1 &amp; 3 &amp; 5 \\ </div><div class="line">2 &amp; 4 &amp; 6</div><div class="line">\end&#123;pmatrix&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>花括号</p>
+</blockquote>
+<span>$$\begin{aligned}
+\overbrace{a+b+\cdots +y+z}^{26}_{=\alpha +\beta} 
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\overbrace&#123;a+b+\cdots +y+z&#125;^&#123;26&#125;_&#123;=\alpha +\beta&#125; </div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<span>$$\begin{aligned}
+a+\underbrace{b+\cdots +y}_{24}+z 
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">a+\underbrace&#123;b+\cdots +y&#125;_&#123;24&#125;+z </div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>堆砌</p>
+</blockquote>
+<span>$$\begin{aligned}
+y\stackrel{\rm def}{=} f(x) \stackrel{x\rightarrow 0}{\rightarrow} A 
+\end{aligned}$$</span><!-- Has MathJax -->
+<pre><code>{% math %}
+\begin{aligned}
+y\stackrel{\rm def}{=} f(x) \stackrel{x\rightarrow 0}{\rightarrow} A 
+\end{aligned}
+{% endmath %}
+</code></pre>
           
         
       

@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="GitHub,Git,Hexo,NexT," />
+  <meta name="keywords" content="Hexo,LaTex," />
 
 
 
@@ -57,34 +57,19 @@
 
 
 
-<meta name="description" content="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。
-
-1.环境配置环境配置主要包括：创建GitHub仓库、安装Git、安装Node.js
-
-创建GitHub仓库，建立GitHub Pages
-
-关于Github:GitHub是一个远程仓库，一个开源协作社区，">
+<meta name="description" content="前言：最近没课在看一些书，博客搭好了所以想写一些笔记/分享，但是发现公式的编辑很是一个问题，怎样才能用比较简单快速的方法编辑出美观规范的数学公式呢？语法+工具
+1.配置hexo-math插件我使用的是NexT主题，对于大多数主题来说，推荐可以使用hexo-math插件来完成对LaTex公式的渲染。只需一步即可完成，在博客目录下Git Bash Here，并：$ npm install hexo-m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub+Hexo+NexT 搭建博客">
-<meta property="og:url" content="http://yoursite.com/2016/10/31/creat blog/index.html">
+<meta property="og:title" content="LaTex语法与实例">
+<meta property="og:url" content="http://yoursite.com/2016/11/01/latex/index.html">
 <meta property="og:site_name" content="VICTORSUN">
-<meta property="og:description" content="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。
-
-1.环境配置环境配置主要包括：创建GitHub仓库、安装Git、安装Node.js
-
-创建GitHub仓库，建立GitHub Pages
-
-关于Github:GitHub是一个远程仓库，一个开源协作社区，">
-<meta property="og:updated_time" content="2016-10-31T18:39:37.703Z">
+<meta property="og:description" content="前言：最近没课在看一些书，博客搭好了所以想写一些笔记/分享，但是发现公式的编辑很是一个问题，怎样才能用比较简单快速的方法编辑出美观规范的数学公式呢？语法+工具
+1.配置hexo-math插件我使用的是NexT主题，对于大多数主题来说，推荐可以使用hexo-math插件来完成对LaTex公式的渲染。只需一步即可完成，在博客目录下Git Bash Here，并：$ npm install hexo-m">
+<meta property="og:updated_time" content="2016-11-01T13:39:43.127Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitHub+Hexo+NexT 搭建博客">
-<meta name="twitter:description" content="前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。
-
-1.环境配置环境配置主要包括：创建GitHub仓库、安装Git、安装Node.js
-
-创建GitHub仓库，建立GitHub Pages
-
-关于Github:GitHub是一个远程仓库，一个开源协作社区，">
+<meta name="twitter:title" content="LaTex语法与实例">
+<meta name="twitter:description" content="前言：最近没课在看一些书，博客搭好了所以想写一些笔记/分享，但是发现公式的编辑很是一个问题，怎样才能用比较简单快速的方法编辑出美观规范的数学公式呢？语法+工具
+1.配置hexo-math插件我使用的是NexT主题，对于大多数主题来说，推荐可以使用hexo-math插件来完成对LaTex公式的渲染。只需一步即可完成，在博客目录下Git Bash Here，并：$ npm install hexo-m">
 
 
 
@@ -102,7 +87,7 @@
   };
 </script>
 
-  <title> GitHub+Hexo+NexT 搭建博客 | VICTORSUN </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> LaTex语法与实例 | VICTORSUN </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -245,7 +230,7 @@
             
             
               
-                GitHub+Hexo+NexT 搭建博客
+                LaTex语法与实例
               
             
           </h1>
@@ -257,8 +242,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-31T21:12:26+08:00" content="2016-10-31">
-              2016-10-31
+            <time itemprop="dateCreated" datetime="2016-11-01T08:03:07+08:00" content="2016-11-01">
+              2016-11-01
             </time>
           </span>
 
@@ -287,8 +272,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/31/creat blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/creat blog/" itemprop="commentsCount"></span>
+                <a href="/2016/11/01/latex/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/01/latex/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -298,7 +283,7 @@
 
           
           
-             <span id="/2016/10/31/creat blog/" class="leancloud_visitors" data-flag-title="GitHub+Hexo+NexT 搭建博客">
+             <span id="/2016/11/01/latex/" class="leancloud_visitors" data-flag-title="LaTex语法与实例">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -319,107 +304,189 @@
       
 
       
-        <font size="4">前言：本文基于GitHub搭建Hexo个人博客，使用的是NexT主题，由于我在博客搭建过程中踩了不少坑，用了快两天时间才搞定，所以我将整合现有的教程和我的经验教训尽量详细的分享博客搭建的过程。</font>
-
-<h2 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1.环境配置"></a>1.环境配置</h2><p><strong>环境配置主要包括：创建GitHub仓库、安装Git、安装Node.js</strong></p>
+        <p><font size="4">前言：最近没课在看一些书，博客搭好了所以想写一些笔记/分享，但是发现公式的编辑很是一个问题，怎样才能用比较简单快速的方法编辑出美观规范的数学公式呢？语法+工具</font></p>
+<h3 id="1-配置hexo-math插件"><a href="#1-配置hexo-math插件" class="headerlink" title="1.配置hexo-math插件"></a>1.配置hexo-math插件</h3><p>我使用的是NexT主题，对于大多数主题来说，推荐可以使用hexo-math插件来完成对LaTex公式的渲染。只需一步即可完成，在博客目录下Git Bash Here，并：<br><code>$ npm install hexo-math --save</code><br>是不是很省心~</p>
+<h3 id="2-常用LaTex语法"><a href="#2-常用LaTex语法" class="headerlink" title="2.常用LaTex语法"></a>2.常用LaTex语法</h3><p>在这里我按照现有的文档总结了几个实用的LaTex语法：</p>
 <blockquote>
-<p>创建GitHub仓库，建立GitHub Pages</p>
+<p><strong>段落处理</strong></p>
 </blockquote>
-<p>关于Github:<br>GitHub是一个远程仓库，一个开源协作社区，更重要的是：它是免费的！</p>
-<ul>
-<li>首先需要创建一个<a href="https://github.com/" target="_blank" rel="external"><strong>GitHub</strong></a>账户，我们假设你的账户名称为 david ,易于后面的演示。GitHub 邮箱也要通过验证才行。</li>
-<li>然后再创建一个GitHub仓库：点击GitHub界面右上角的+，然后点击<code>New repository</code> 创建仓库，<strong> 切记 </strong><code>Repository name</code>一定得是“GitHub账号.github.io ”的形式，在这里为<code>david.github.io</code>，因为GitHub规定这样命名形式才能作为网络站点的托管仓库。</li>
-<li>到这里，博客网站就有自己温馨的港湾啦。</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">操作</th>
+<th style="text-align:center">方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">空格</td>
+<td style="text-align:center">不起作用</td>
+</tr>
+<tr>
+<td style="text-align:center">换行</td>
+<td style="text-align:center">\</td>
+</tr>
+<tr>
+<td style="text-align:center">分段</td>
+<td style="text-align:center">\par</td>
+</tr>
+<tr>
+<td style="text-align:center">换页</td>
+<td style="text-align:center">\newpage</td>
+</tr>
+</tbody>
+</table>
+<p>而输出 #,$,%,&amp;,-,{,},^,~ 等字符需要前置反斜线 <code>\</code>转义。</p>
 <blockquote>
-<p>安装Git</p>
+<p><strong>西文字符转换表</strong></p>
 </blockquote>
-<p>关于Git:<br>Git是一个开源的分布式版本控制系统，可以有效、高速的处理各种类型的项目版本管理。它还支持离线工作，适合多人分布式开发。</p>
-<ul>
-<li>至于如何下载、安装、使用Git，廖雪峰老师在他的<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000" target="_blank" rel="external">Git教程</a>里面已经讲述的很详细了，我也是在此学习的，另外也推荐<a href="http://iissnan.com/progit/" target="_blank" rel="external">Pro Git</a>的电子版。</li>
-<li>到这里，就已经默认你已经安装好配置好Git了~</li>
-</ul>
+<p>实用为主，不赘述，可以用工具完成，工具下面会介绍</p>
 <blockquote>
-<p>安装Node.js</p>
+<p><strong>字号转换命令表</strong></p>
 </blockquote>
-<p>关于Node.js:<br> Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">中文字号</th>
+<th style="text-align:center">控制命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">一号</td>
+<td style="text-align:center">\Huge</td>
+</tr>
+<tr>
+<td style="text-align:center">二号</td>
+<td style="text-align:center">\huge</td>
+</tr>
+<tr>
+<td style="text-align:center">三号</td>
+<td style="text-align:center">\LARGE</td>
+</tr>
+<tr>
+<td style="text-align:center">四号</td>
+<td style="text-align:center">\Large</td>
+</tr>
+<tr>
+<td style="text-align:center">小四号</td>
+<td style="text-align:center">\large</td>
+</tr>
+<tr>
+<td style="text-align:center">五号</td>
+<td style="text-align:center">\normalsize</td>
+</tr>
+<tr>
+<td style="text-align:center">小五号</td>
+<td style="text-align:center">\small</td>
+</tr>
+<tr>
+<td style="text-align:center">六号</td>
+<td style="text-align:center">\footnotesize</td>
+</tr>
+<tr>
+<td style="text-align:center">小六号</td>
+<td style="text-align:center">\scriptsize</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>页面控制命令</strong></p>
+</blockquote>
+<p>系统默认：字号10pt= 五号字；西文字体为罗马字体；textwidth=12.2cm,textheight=18.6cm。相当于美国标准信纸大小。<br>可以通过以下操作改变页面尺寸：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">\textwidth=</div><div class="line">\textheight=</div></pre></td></tr></table></figure></p>
+<h3 id="3-LaTex-公式渲染与-Markdown-渲染冲突问题"><a href="#3-LaTex-公式渲染与-Markdown-渲染冲突问题" class="headerlink" title="3.LaTex 公式渲染与 Markdown 渲染冲突问题"></a>3.LaTex 公式渲染与 Markdown 渲染冲突问题</h3><p>如LaTex 中的下划线<code>_</code>就会出现解析错误。解决方法有很多，这里介绍两种：</p>
 <ul>
-<li>去<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网下载</li>
-<li>安装保持默认并一路 next 即可<br>到这里，环境配置过程已经完成了。</li>
-</ul>
-<hr>
-<h2 id="2-安装Hexo，并部署网站"><a href="#2-安装Hexo，并部署网站" class="headerlink" title="2.安装Hexo，并部署网站"></a>2.安装Hexo，并部署网站</h2><p>关于Hexo：</p>
-<ul>
-<li>A fast, simple &amp; powerful blog framework, powered by Node.js<ul>
-<li>Blazing fast generating</li>
-<li>Support for GitHub Flavored Markdown and most Octopress plugins</li>
-<li>One-command deploy to GitHub Pages, Heroku, etc.</li>
-<li>Powerful plugin system</li>
-</ul>
+<li>将LaTex 语法公式中的所有<code>_</code>加反斜线 <code>\</code>转义，即<code>\_</code>可以解析成功。<br>但是，这样的方式将导致所有的下标都修改一遍。</li>
+<li>将公式前后的一对<code>$</code>分别换成:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">我是LaTex公式</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<p>这种的方法实例将在5中给出。</p>
+<h3 id="4-在线LaTex编辑器"><a href="#4-在线LaTex编辑器" class="headerlink" title="4.在线LaTex编辑器"></a>4.在线LaTex编辑器</h3><p>即使掌握了LaTex语法，但是编辑公式仍然是费时费力的，这里推荐<a href="http://latex.codecogs.com/eqneditor/editor.php" target="_blank" rel="external">在线LaTex编辑器</a>，可以实现实时预览功能的同时还提供了图形辅助操作，节省了记忆和查询语法的时间。相信你在第一眼看到它的时候就会用啦~<br><strong>但是</strong>，最基本的语法还是要掌握的，工具不是万能的，有些生僻的格式还需要结合语法知识，相辅相成。</p>
+<h3 id="5-常用公式代码实例"><a href="#5-常用公式代码实例" class="headerlink" title="5.常用公式代码实例"></a>5.常用公式代码实例</h3><p>OK，用下面展示一些常用的代码实例，基本上可以满足一般的公式编辑需求，用到时套用即可。</p>
 <blockquote>
-<p>Hexo博客框架初始化</p>
+<p>基本运算</p>
 </blockquote>
-<ul>
-<li>安装Hexo<br>得益于我们之前的准备工作，Git和Node.js均已经配置好，可以直接下载Hexo.<br>在 Git Bash 中输入如下代码<pre><code>$ npm install -g hexo-cli   
-</code></pre></li>
-<li>初始化<br>选择一个盘(如 C:)建立你的博客本机存储文件夹（如 blog:），在此文件夹空白处右击选择 Git Bash Here（或者<code>$ cd C:\blog</code>进入blog文件夹）进行git操作，接下来：<pre><code>$ hexo init
-$ npm install
-</code></pre></li>
-<li>配置站点<br>即建立本地文件与GitHub的Repository之间的联系，使用 <a href="https://notepad-plus-plus.org/" target="_blank" rel="external">Notepad++</a> 打开<code>C:\blog\_config.yml</code>文件，拉到文件最下方的<strong>deploy</strong>进行如下配置：<pre><code>deploy:
-    type: git
-    repository: https://github.com/david/david.github.io.git
-    branch: master
-</code></pre><strong>其中</strong>，需要注意两点：第一， <code>repository:</code>和<code>branch:</code>均须自行添加；第二，Hexo的所有配置文件中的<code>:</code>后面均需要添加一个<strong>空格</strong>才可以书写，否则会出现<code>ERROR Deployer not found : git</code>的错误！</li>
-<li>写第一篇博文<br>博文名称为《My First Blog》，代码：<pre><code>$ hexo new &quot;My First Blog&quot;
-</code></pre>此时会发现在<code>C:\blog\source\_post</code>里面出现了<code>My First Blog.md</code>文件，这个<code>_post</code>就是存储博文的文件夹。<ul>
-<li>这里写作博文建议使用<a href="http://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">Markdown</a> ，写作工具可以用<a href="http://www.jianshu.com/" target="_blank" rel="external">简书</a>(强烈建议:支持在线预览模式)或者<a href="http://www.sublimetext.com/2" target="_blank" rel="external">Sublime Text 2</a>，Markdown是一种轻量级的标记语言，语法十分简单，可以参考<a href="http://www.jianshu.com/p/1e402922ee32" target="_blank" rel="external">Markdown——入门指南</a>进行学习，只需五分钟奥~</li>
-</ul>
-</li>
-<li>生成静态页面<pre><code>$ hexo generate  (或简写为 $ hexo g)
-</code></pre>此时<code>My First Blog.md</code>已经在<code>C:\blog\source\public</code>文件夹里生成了博客网站的静态文件。</li>
-<li>启动本地服务器<pre><code>$ hexo server  (或简写为 $ hexo s)
-</code></pre>用浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>，此时，你将会看到一个主题是landscape的博客(简直不忍直视……)，下面我们将介绍另外一个优美简约的主题：NexT</li>
-</ul>
+<span>$$\begin{aligned}
+\dot{x} &amp; = \sigma(y-x) \\
+\dot{y} &amp; = \rho x - y - xz \\
+\dot{z} &amp; = -\beta z + xy
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\dot&#123;x&#125; &amp; = \sigma(y-x) \\</div><div class="line">\dot&#123;y&#125; &amp; = \rho x - y - xz \\</div><div class="line">\dot&#123;z&#125; &amp; = -\beta z + xy</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
 <blockquote>
-<p>部署本地网站到GitHub</p>
+<p>上下标</p>
 </blockquote>
-<pre><code>$ hexo deploy  (或简写为 $ hexo d)
-</code></pre><p>此时会先后出现两个界面，输入注册GitHub账号和密码。<br><strong>应注意的是：如果在本地预览时发生修改操作，需要重新<code>$ hexo g</code>之后再<code>$ hexo d</code></strong></p>
-<ul>
-<li>访问网站<br>上面的所有流程完成后，博客就已经搭建并发布到GitHub上了，在浏览器输入<code>david.github.io</code>并访问，就可以看到你的博客了。</li>
-</ul>
+<span>$$\begin{aligned}
+F_{0}^{n}=F_{1}^{n+1}+F_{2}^{n-1}
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">F_&#123;0&#125;^&#123;n&#125;=F_&#123;1&#125;^&#123;n+1&#125;+F_&#123;2&#125;^&#123;n-1&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
 <blockquote>
-<p><strong>小结</strong></p>
+<p>积分与求和</p>
 </blockquote>
-<p>在环境配置好以后，我们每次发表博文的过程如下：</p>
-<ul>
-<li>用简书编辑好Markdown博文放到<code>C:\blog\source\_post</code>文件夹</li>
-<li><code>$ hexo g</code> 生成静态页面</li>
-<li><code>$ hexo s</code> 启动本地服务器，在<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>预览</li>
-<li><code>$ hexo d</code> 部署网站到Github</li>
-<li>访问网站</li>
-</ul>
-<hr>
-<h2 id="3-更换NexT主题"><a href="#3-更换NexT主题" class="headerlink" title="3.更换NexT主题"></a>3.更换NexT主题</h2><p>关于NexT:<br>NexT是一个流行的Hexo主题，开发者赋予其主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
-<font size="3"><strong>需要注意的是，配置文件<code>_config.yml</code>其实有两个，分别位于<code>C:\blog</code>和<code>C:\blog\source\themes</code>目录下，前者为<code>站点配置文件</code>，后者为<code>主题配置文件</code>。我的博客的这两个配置文件已经上传到我的GitHub中的<a href="https://github.com/victorsungo/config2github" target="_blank" rel="external">config2github</a>仓库中，可以作为参考</strong></font>
-
-<ul>
-<li>下载NexT<br>Hexo的默认主题是landscape.其实Hexo提供了丰富色彩的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>供我们下载使用。这里我使用的是NexT，下载稳定版本可以按照如下操作：<ul>
-<li>前往<a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="external">Hexo版本发布页面</a></li>
-<li>选择你所需要的版本，下载 Download 区域下的 Source Code (zip) 到本地。例如，下载 v0.4.0 版本</li>
-<li>然后copy并解压到<code>C:\blog\source\themes</code>中。建议将文件夹改为<code>next</code>，方便操作。</li>
-</ul>
-</li>
-<li>启用NexT<br>打开<strong><code>站点配置文件</code></strong>，找到<code>theme</code>字段，将其值由默认的<code>landscape</code>改为<code>next</code>，注意“:”后的空格！</li>
-<li>验证NexT<pre><code>$ hexo s
-</code></pre>然后在浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>, 检查站点是否正确运行。</li>
-<li>个性化NexT<br>对于主题的个性化设定是通过编辑<strong><code>主题配置文件</code></strong>完成的。<br>至于具体的配置方法，在<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">NexT官网</a>已经介绍的非常详细，不再赘述。</li>
-</ul>
-<hr>
-<p>OK~ 至此，我们的博客算是基本搭建完成啦，以后可以边用边学习，一些高级的个性化和第三方服务可以在这个过程中慢慢优化。</p>
-
+<span>$$\begin{aligned}
+\sum_{i=1}^{n}x_{i}=\int_{0}^{1}f(x)\mathrm{d}x
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\sum_&#123;i=1&#125;^&#123;n&#125;x_&#123;i&#125;=\int_&#123;0&#125;^&#123;1&#125;f(x)\mathrm&#123;d&#125;x</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<span>$$\begin{aligned}
+\sum_{
+1\leqslant i\leq n \atop
+1\leqslant j\leq n
+}a_{ij}
+\end{aligned}$$</span><!-- Has MathJax --> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\sum_&#123;</div><div class="line">1\leqslant i\leq n \atop</div><div class="line">1\leqslant j\leq n</div><div class="line">&#125;a_&#123;ij&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>极限</p>
+</blockquote>
+<span>$$\begin{aligned}
+\lim_{n \to \infty }\sin x_{n}=0 
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\lim_&#123;n \to \infty &#125;\sin x_&#123;n&#125;=0 </div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>根式</p>
+</blockquote>
+<span>$$\begin{aligned}
+x=\sqrt[m]{1+x^{p}}
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"> &#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">x=\sqrt[m]&#123;1+x^&#123;p&#125;&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>绝对值</p>
+</blockquote>
+<span>$$\begin{aligned}
+\left | a+b \right |=\coprod_{m}^{n} \frac{e}{f}
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\left | a+b \right |=\coprod_&#123;m&#125;^&#123;n&#125; \frac&#123;e&#125;&#123;f&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>矩阵</p>
+</blockquote>
+<span>$$\begin{aligned}
+\begin{pmatrix}
+1 &amp; 3 &amp; 5 \\ 
+2 &amp; 4 &amp; 6
+\end{pmatrix}
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\begin&#123;pmatrix&#125;</div><div class="line">1 &amp; 3 &amp; 5 \\ </div><div class="line">2 &amp; 4 &amp; 6</div><div class="line">\end&#123;pmatrix&#125;</div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>花括号</p>
+</blockquote>
+<span>$$\begin{aligned}
+\overbrace{a+b+\cdots +y+z}^{26}_{=\alpha +\beta} 
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">\overbrace&#123;a+b+\cdots +y+z&#125;^&#123;26&#125;_&#123;=\alpha +\beta&#125; </div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<span>$$\begin{aligned}
+a+\underbrace{b+\cdots +y}_{24}+z 
+\end{aligned}$$</span><!-- Has MathJax -->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;% math %&#125;</div><div class="line">\begin&#123;aligned&#125;</div><div class="line">a+\underbrace&#123;b+\cdots +y&#125;_&#123;24&#125;+z </div><div class="line">\end&#123;aligned&#125;</div><div class="line">&#123;% endmath %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>堆砌</p>
+</blockquote>
+<span>$$\begin{aligned}
+y\stackrel{\rm def}{=} f(x) \stackrel{x\rightarrow 0}{\rightarrow} A 
+\end{aligned}$$</span><!-- Has MathJax -->
+<pre><code>{% math %}
+\begin{aligned}
+y\stackrel{\rm def}{=} f(x) \stackrel{x\rightarrow 0}{\rightarrow} A 
+\end{aligned}
+{% endmath %}
+</code></pre>
       
     </div>
 
@@ -433,13 +500,9 @@ $ npm install
       
         <div class="post-tags">
           
-            <a href="/tags/GitHub/" rel="tag">#GitHub</a>
-          
-            <a href="/tags/Git/" rel="tag">#Git</a>
-          
             <a href="/tags/Hexo/" rel="tag">#Hexo</a>
           
-            <a href="/tags/NexT/" rel="tag">#NexT</a>
+            <a href="/tags/LaTex/" rel="tag">#LaTex</a>
           
         </div>
       
@@ -448,13 +511,13 @@ $ npm install
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/10/31/creat blog/" rel="next" title="GitHub+Hexo+NexT 搭建博客">
+                <i class="fa fa-chevron-left"></i> GitHub+Hexo+NexT 搭建博客
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/01/latex/" rel="prev" title="LaTex语法与实例">
-                LaTex语法与实例 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -480,8 +543,8 @@ $ npm install
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/31/creat blog/"
-           data-title="GitHub+Hexo+NexT 搭建博客" data-url="http://yoursite.com/2016/10/31/creat blog/">
+      <div class="ds-thread" data-thread-key="2016/11/01/latex/"
+           data-title="LaTex语法与实例" data-url="http://yoursite.com/2016/11/01/latex/">
       </div>
     
   </div>
@@ -585,7 +648,7 @@ $ npm install
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-环境配置"><span class="nav-text">1.环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Hexo，并部署网站"><span class="nav-text">2.安装Hexo，并部署网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-更换NexT主题"><span class="nav-text">3.更换NexT主题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-配置hexo-math插件"><span class="nav-text">1.配置hexo-math插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-常用LaTex语法"><span class="nav-text">2.常用LaTex语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-LaTex-公式渲染与-Markdown-渲染冲突问题"><span class="nav-text">3.LaTex 公式渲染与 Markdown 渲染冲突问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-在线LaTex编辑器"><span class="nav-text">4.在线LaTex编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-常用公式代码实例"><span class="nav-text">5.常用公式代码实例</span></a></li></ol></div>
             
           </div>
         </section>
