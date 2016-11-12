@@ -1,0 +1,997 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="1.概述对于轻量级爬虫：
+
+只抓取静态页面
+
+而对于高级的爬虫，需要考虑的因素就较多，如：
+
+如何模拟登陆
+验证码识别
+分布式爬取网页
+数据存储
+网页更新
+
+这些因素都具有重要的现实意义，但是对于初学者来讲，了解爬虫的基础架构显得更为必要，在实际应用场景中对其扩展可以爬取其他网页。
+对于一个简单的爬虫架构，它包含了以下三大模块：URL管理器： 用来管理将要抓取的URL和已经抓取过的URLHTML下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python开发轻量级爬虫">
+<meta property="og:url" content="http://yoursite.com/2016/11/12/Python easy spider/index.html">
+<meta property="og:site_name" content="VICTORSUN">
+<meta property="og:description" content="1.概述对于轻量级爬虫：
+
+只抓取静态页面
+
+而对于高级的爬虫，需要考虑的因素就较多，如：
+
+如何模拟登陆
+验证码识别
+分布式爬取网页
+数据存储
+网页更新
+
+这些因素都具有重要的现实意义，但是对于初学者来讲，了解爬虫的基础架构显得更为必要，在实际应用场景中对其扩展可以爬取其他网页。
+对于一个简单的爬虫架构，它包含了以下三大模块：URL管理器： 用来管理将要抓取的URL和已经抓取过的URLHTML下">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-6ce10339033c7cba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-c3a675165aa40531.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-7106ce495ef7ea8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-e00989388d44602a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-4497361465ef263f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-d18d59c63586d183.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-7cdf6be81b2e6df3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-a23439b308173fa2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-21afe8826281ba9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-ab5a1e42c60da28a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-e5138777c3844bb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-cbdbe787de89ceb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-b8106c578b037fea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3480470-b4de398f7e2192bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-11-12T07:47:21.061Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python开发轻量级爬虫">
+<meta name="twitter:description" content="1.概述对于轻量级爬虫：
+
+只抓取静态页面
+
+而对于高级的爬虫，需要考虑的因素就较多，如：
+
+如何模拟登陆
+验证码识别
+分布式爬取网页
+数据存储
+网页更新
+
+这些因素都具有重要的现实意义，但是对于初学者来讲，了解爬虫的基础架构显得更为必要，在实际应用场景中对其扩展可以爬取其他网页。
+对于一个简单的爬虫架构，它包含了以下三大模块：URL管理器： 用来管理将要抓取的URL和已经抓取过的URLHTML下">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/3480470-6ce10339033c7cba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Python开发轻量级爬虫 | VICTORSUN </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">VICTORSUN</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Python开发轻量级爬虫
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-12T15:46:06+08:00" content="2016-11-12">
+              2016-11-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/12/Python easy spider/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/12/Python easy spider/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/11/12/Python easy spider/" class="leancloud_visitors" data-flag-title="Python开发轻量级爬虫">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1.概述"></a>1.概述</h3><p>对于<strong>轻量级爬虫</strong>：</p>
+<ul>
+<li>只抓取静态页面</li>
+</ul>
+<p>而对于<strong>高级的爬虫</strong>，需要考虑的因素就较多，如：</p>
+<ul>
+<li>如何模拟登陆</li>
+<li>验证码识别</li>
+<li>分布式爬取网页</li>
+<li>数据存储</li>
+<li>网页更新</li>
+</ul>
+<p>这些因素都具有重要的现实意义，但是对于初学者来讲，了解爬虫的基础架构显得更为必要，在实际应用场景中对其扩展可以爬取其他网页。</p>
+<p>对于一个简单的爬虫架构，它包含了以下三大模块：<br><strong><font color="#FF4500">URL管理器：</font></strong> 用来管理将要抓取的URL和已经抓取过的URL<br><strong><font color="#FF4500">HTML下载器：</font></strong>给定一个URL，需要将其网页下载到本地后才能进行后续的分析。（这里使用Python自带的urllib2模块）<br><strong><font color="#FF4500">HTML解析器：</font></strong>得到了网页的内容以后，我们需要对其进行解析才能提取出我们想要的、我们感兴趣的内容。（这里使用Python的第三方插件BeautifulSoup）</p>
+<hr>
+<h3 id="2-爬虫架构："><a href="#2-爬虫架构：" class="headerlink" title="2.爬虫架构："></a>2.爬虫架构：</h3><p><strong><font color="#FF4500">爬虫调度端：</font></strong><br>启动爬虫、停止爬虫或者监视爬虫的运行情况</p>
+<p>而在爬虫程序中有三个模块：</p>
+<p><strong><font color="#FF4500">URL管理器：</font></strong>对将要抓取的URL和已经抓取过的URL进行管理。我们可以取出一个将要爬取的URL传送给<strong><font color="#FF4500">HTML下载器：</font></strong>，下载器会将URL指定的网页下载下来，存储成一个字符串，这个字符串会传送给<strong><font color="#FF4500">HTML解析器：</font></strong>进行解析，一方面会解析出有价值的数据，另一方面每一个网页会有许多指向其他网页的URL，这些URL被解析出来以后可以补充进URL管理器。<br>URL管理器、HTML下载器和HTML下载器会形成一个循环，只要有相关联的URL就会一直运行下去。以上这些模块就组成了这个简单的爬虫架构。这个架构就可以把互联网上的相关所有网页下载下来。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3480470-6ce10339033c7cba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="爬虫架构"></p>
+<p>爬虫运行流程：<br>下图以时序图的方式给出了爬虫架构的运行流程<br><img src="http://upload-images.jianshu.io/upload_images/3480470-c3a675165aa40531.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="简单爬虫架构动态运行流程"></p>
+<h3 id="3-URL管理器"><a href="#3-URL管理器" class="headerlink" title="3.URL管理器"></a>3.URL管理器</h3><ul>
+<li>URL管理器：管理待抓取URL集合和已抓取URL集合<ul>
+<li>防止重复抓取、防止循环抓取</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h4 id="URL管理器功能"><a href="#URL管理器功能" class="headerlink" title="URL管理器功能"></a>URL管理器功能</h4></blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/3480470-7106ce495ef7ea8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="URL管理器功能"></p>
+<blockquote>
+<h4 id="Python爬虫URL管理器实现方式"><a href="#Python爬虫URL管理器实现方式" class="headerlink" title="Python爬虫URL管理器实现方式"></a>Python爬虫URL管理器实现方式</h4></blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/3480470-e00989388d44602a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="URL管理器的实现方式"></p>
+<h3 id="4-HTML下载器"><a href="#4-HTML下载器" class="headerlink" title="4.HTML下载器"></a>4.HTML下载器</h3><blockquote>
+<h4 id="HTML下载器简介"><a href="#HTML下载器简介" class="headerlink" title="HTML下载器简介"></a>HTML下载器简介</h4></blockquote>
+<p>HTML下载器：将互联网上URL上对应的网页下载到本地的工具。可以说HTML下载器是爬虫的核心组件<br><img src="http://upload-images.jianshu.io/upload_images/3480470-4497361465ef263f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="HTML下载器"></p>
+<ul>
+<li><p>Python有哪几种网页下载器？</p>
+<ul>
+<li><p><strong><font color="#FF4500">urllib2</font></strong>是Python官方的基础模块，支持直接的URL下载，或者向网页提供需要用户输入的数据，甚至支持需要登录网页的cookie处理，需要代理访问的代理处理等这些增强功能</p>
+</li>
+<li><p><strong><font color="#FF4500">requests</font></strong>是Python的第三方插件，它提供更为强大的功能</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/3480470-d18d59c63586d183.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="HTML下载器分类"></p>
+<p><strong>这里使用urllib2.</strong></p>
+<blockquote>
+<h4 id="urllib2下载网页的三种方法"><a href="#urllib2下载网页的三种方法" class="headerlink" title="urllib2下载网页的三种方法"></a>urllib2下载网页的三种方法</h4></blockquote>
+<p><strong>1.最简洁方法</strong></p>
+<p>给定一个url，将其传送给urllib2模块的urlopen()方法,即：urllib2.urlopen(url)<br>对应到代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">import urllib2</div><div class="line"></div><div class="line"># 直接请求</div><div class="line">response=urllib2.urlopen(&apos;http://www.baidu.com&apos;) </div><div class="line"></div><div class="line"># 获取状态码，如果是200表示获取成功</div><div class="line">print response.getcode()</div><div class="line"></div><div class="line"># 读取内容</div><div class="line">cont=response.read()</div></pre></td></tr></table></figure></p>
+<p><strong>2.添加data、http header</strong><br><img src="http://upload-images.jianshu.io/upload_images/3480470-7cdf6be81b2e6df3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="方法2"></p>
+<p>对应到代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">import urllib2</div><div class="line"></div><div class="line"># 创建Request对象</div><div class="line">request=urllib2.Request(url)</div><div class="line"></div><div class="line"># 添加data</div><div class="line">request.add_data(&apos;a&apos;,&apos;1&apos;)</div><div class="line"># 添加http的header</div><div class="line">request.add_header(&apos;User-Agent&apos;,&apos;Mozilla/5.0&apos;)</div><div class="line"></div><div class="line"># 发送请求获取结果</div><div class="line">response=urllib2.urlopen(request)</div></pre></td></tr></table></figure></p>
+<p><strong>3.添加特殊情景的处理器<br><img src="http://upload-images.jianshu.io/upload_images/3480470-a23439b308173fa2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="特殊情景处理器"></strong></p>
+<p>例如，增强cookie的处理，对应到代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">import urllib2,cookielib</div><div class="line"></div><div class="line"># 创建cookie容器</div><div class="line">cj=cookielib.CookieJar()</div><div class="line"></div><div class="line"># 创建一个opener</div><div class="line">opener=urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))</div><div class="line"></div><div class="line"># 给urllib2安装opener</div><div class="line">urllib2.install_opener(opener)</div><div class="line"></div><div class="line"># 使用带有cookie的urllib2访问网页</div><div class="line">reponse=urllib2.urlopen(&quot;http://www.baidu.com/&quot;)</div></pre></td></tr></table></figure></p>
+<p>以上三种方法都实现了网页的下载，但是每一种方法都比前一种方法有更大的更强的功能处理。</p>
+<h3 id="5-HTML解析器和BeautifulSoup第三方模块"><a href="#5-HTML解析器和BeautifulSoup第三方模块" class="headerlink" title="5.HTML解析器和BeautifulSoup第三方模块"></a>5.HTML解析器和BeautifulSoup第三方模块</h3><blockquote>
+<h4 id="HTML解析器"><a href="#HTML解析器" class="headerlink" title="HTML解析器"></a>HTML解析器</h4></blockquote>
+<p>HTML解析器：从网页中提取有价值数据的工具<br><img src="http://upload-images.jianshu.io/upload_images/3480470-21afe8826281ba9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网页解析器"></p>
+<p>Python有哪几种HTML解析器？</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3480470-ab5a1e42c60da28a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="HTML解析器分类"></p>
+<ul>
+<li><strong>结构化解析-DOM（Document Object Model）树</strong><br><img src="http://upload-images.jianshu.io/upload_images/3480470-e5138777c3844bb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DOM树.png"></li>
+</ul>
+<blockquote>
+<h4 id="Beautiful-Soup"><a href="#Beautiful-Soup" class="headerlink" title="Beautiful Soup"></a>Beautiful Soup</h4></blockquote>
+<ul>
+<li>Python第三方库，用于从HTML或XML中提取数据</li>
+<li>官网：<a href="http://www.crummy.com/software/BeautifulSoup/" target="_blank" rel="external">http://www.crummy.com/software/BeautifulSoup/</a></li>
+</ul>
+<ul>
+<li><p>安装并测试beautifulsoup4</p>
+<ul>
+<li>安装：pip install beautifulsoup4</li>
+<li>测试：import bs4</li>
+</ul>
+</li>
+<li><p>Beautiful Soup-语法<br><img src="http://upload-images.jianshu.io/upload_images/3480470-cbdbe787de89ceb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Beautiful Soup-语法"></p>
+</li>
+</ul>
+<p>例如：<br><img src="http://upload-images.jianshu.io/upload_images/3480470-b8106c578b037fea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="举例"></p>
+<p>对应到代码：</p>
+<ul>
+<li>创建BeautifulSoup对象</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">form bs4 import BeautifulSoup</div><div class="line"></div><div class="line"># 根据HTML网页字符串创建BeautifulSoup对象</div><div class="line">soup=BeautifulSoup(</div><div class="line">                  html_doc,              #HTML文档字符串</div><div class="line">                  &apos;html.paser&apos;           #HTML解析器</div><div class="line">                  from_encoding=&apos;utf8&apos;   #HTML文档的编码</div><div class="line">                  )</div></pre></td></tr></table></figure>
+<ul>
+<li>搜索节点（find_all,find）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># 方法：find_all(name,attrs,string)</div><div class="line"></div><div class="line"># 查找所有标签为a的节点</div><div class="line">soup.find_all(&apos;a&apos;)</div><div class="line"></div><div class="line"># 查找所有标签为a，链接符合/view/123.htm形式的节点</div><div class="line">soup.find_all(&apos;a&apos;,href=&apos;/view/123.htm&apos;)</div><div class="line">soup.find_all(&apos;a&apos;,href=re.compile(r&apos;/view/\d+\.htm&apos;))</div><div class="line"></div><div class="line"># 查找所有标签为div,class为abc,文字为Python的节点</div><div class="line">soup.find_all(&apos;div&apos;,class_=&apos;abc&apos;,string=&apos;Python&apos;)</div></pre></td></tr></table></figure>
+<ul>
+<li>访问节点信息</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 得到结点：&lt;a href=&apos;1.html&apos;&gt; Python &lt;/a&gt;</div><div class="line"></div><div class="line"># 获取查找到的节点的标签名称</div><div class="line">node.name</div><div class="line"></div><div class="line"># 获取查找到的a结点的href属性</div><div class="line">node[&apos;href&apos;]</div><div class="line"></div><div class="line"># 获取 查找到的a结点的链接文字</div><div class="line">node.get_text()</div></pre></td></tr></table></figure>
+<p><strong> 通过以上创建BS对象、搜索DOM树、访问节点的内容，就可以实现对整个下载好的网页所有节点的解析、访问。</strong></p>
+<h3 id="6-实例"><a href="#6-实例" class="headerlink" title="6.实例"></a>6.实例</h3><p><strong>这里爬取的是<a href="http://www.imooc.com/video/10688" target="_blank" rel="external">百度百科Python词条相关的1000个页面数据</a>，</strong>（本实例来源于慕课网教程）。<br>然后将这些数据写出到一个HTML5页面中，打开这个页面就可以看到我们已经爬取好的数据。<br>代码我已经敲了一遍，在Python3 版本亲测可执行，可以在<a href="">我的GitHub</a>获取。<br>爬取结果如下图：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3480470-b4de398f7e2192bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag">#Python</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/10/Python learn_2/" rel="next" title="Python学习笔记[2]">
+                <i class="fa fa-chevron-left"></i> Python学习笔记[2]
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/12/Python easy spider/"
+           data-title="Python开发轻量级爬虫" data-url="http://yoursite.com/2016/11/12/Python easy spider/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/kobe.jpg"
+               alt="victorsun" />
+          <p class="site-author-name" itemprop="name">victorsun</p>
+          <p class="site-description motion-element" itemprop="description">Just  Do  It !</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/victorsungo" target="_blank">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-概述"><span class="nav-text">1.概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-爬虫架构："><span class="nav-text">2.爬虫架构：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-URL管理器"><span class="nav-text">3.URL管理器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#URL管理器功能"><span class="nav-text">URL管理器功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python爬虫URL管理器实现方式"><span class="nav-text">Python爬虫URL管理器实现方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-HTML下载器"><span class="nav-text">4.HTML下载器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML下载器简介"><span class="nav-text">HTML下载器简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#urllib2下载网页的三种方法"><span class="nav-text">urllib2下载网页的三种方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-HTML解析器和BeautifulSoup第三方模块"><span class="nav-text">5.HTML解析器和BeautifulSoup第三方模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML解析器"><span class="nav-text">HTML解析器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Beautiful-Soup"><span class="nav-text">Beautiful Soup</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-实例"><span class="nav-text">6.实例</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">victorsun</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"victorsungo1"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("EfsNYjhHuMMHyKfND2MqeIje-gzGzoHsz", "ABe7HAd34kDyhaNqyQIaEf7j");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+
+  
+
+</body>
+</html>
