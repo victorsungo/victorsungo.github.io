@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # Bio
-*
+* I am an applied scientist of Microsoft STC Asia Feeds Team.
 * My research interests include machine learning, natural language processing, and information retrieval.
 * I earned my Master’s Degree in Software Engineering from [Peking University](https://www.pku.edu.cn/) in 2020 and obtained a Bachelor’s Degree in Micro-electronics Science from [Hefei University of Technology](https://www.hfut.edu.cn/) in 2017.
 
