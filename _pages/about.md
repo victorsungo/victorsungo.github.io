@@ -9,6 +9,11 @@ redirect_from:
 ---
 
 # Bio
+*
+* My research interests include machine learning, natural language processing, and information retrieval.
+* I obtained a Bachelor’s Degree in Micro-electronics Science from [Hefei University of Technology](https://www.hfut.edu.cn/) in 2017 and earned my Master’s Degree in Software Engineering from [Peking University](https://www.pku.edu.cn/) in 2020.
+
+
 
 # Recent News
 * 2 papers accepted by ACL 2022!
