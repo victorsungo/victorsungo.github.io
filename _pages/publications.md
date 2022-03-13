@@ -3,9 +3,9 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-[Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en)  
-<b><sup>*</sup></b> Equal Contribution 
-<b><sup>^</sup></b> Students Mentored by Me 
+[Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) <br>
+<b><sup>*</sup></b> Equal Contribution <br>
+<b><sup>^</sup></b> Students Mentored by Me <br>
 
 <br>
 <b>[Multimodal Dialogue Response Generation](https://arxiv.org/abs/2110.08515)</b> <br> 
