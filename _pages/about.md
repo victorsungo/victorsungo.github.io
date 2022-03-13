@@ -15,7 +15,7 @@ redirect_from:
 
 
 
-# Recent News
+# News
 * 2 papers accepted by ACL 2022!
 * 1 paper accepted by EMNLP 2019!
 
