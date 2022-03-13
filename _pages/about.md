@@ -24,7 +24,7 @@ redirect_from:
 * July. 2020 - Now, Research Scientist, Microsoft Software Technology Center at Asia.
 
 # Internship Experiences
-* Sept. 2019 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
+* Sept. 2018 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
 
 # Academic Services
 
