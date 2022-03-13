@@ -15,8 +15,9 @@ redirect_from:
 * 1 paper accepted by EMNLP 2019!
 
 # Working Experiences
-
 * July. 2020 - Now, Research Scientist, Microsoft Software Technology Center at Asia.
+
+# Internship Experiences
 * Sept. 2019 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
 
 
