@@ -3,7 +3,7 @@ title: "Publications [Google Scholar](https://scholar.google.com/citations?user=
 permalink: /publications/
 author_profile: true
 ---
-<b><sup>*</sup></b> Equal Contribution, <b><sup>^</sup></b> Students Mentored by Me <br>
+<b><sup>*</sup></b>: Equal Contribution,   <b><sup>^</sup></b>: Students Mentored by Me <br>
 
 <br>
 <b>[Multimodal Dialogue Response Generation](https://arxiv.org/abs/2110.08515)</b> <br> 
