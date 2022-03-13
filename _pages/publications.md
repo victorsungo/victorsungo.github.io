@@ -1,11 +1,13 @@
 ---
-title: "Publications [(Google Scholar)](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en)"
+title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-[Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) | <b><sup>*</sup></b> Equal Contribution | <b><sup>^</sup></b> Students Mentored by Me 
+[Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en)  
+<b><sup>*</sup></b> Equal Contribution 
+<b><sup>^</sup></b> Students Mentored by Me 
 
-<br><br>
+<br>
 <b>[Multimodal Dialogue Response Generation](https://arxiv.org/abs/2110.08515)</b> <br> 
 <b>Qingfeng Sun</b>, Yujing Wang, Can Xu, Kai Zheng, Yaming Yang, Huang Hu, Fei Xu, Jessica Zhang, Xiubo Geng, Daxin Jiang <br> 
 ACL 2022
