@@ -16,7 +16,7 @@ Yufei Wang, Can Xu, <b>Qingfeng Sun</b>, Huang Hu, Chongyang Tao, Xiubo Geng, Da
 
 <br><br>
 <b>[Hierarchical attention prototypical networks for few-shot text classification](https://aclanthology.org/D19-1045)</b> <br> 
-Shengli Sun <sup>*</sup>, <b>Qingfeng Sun</b> <sup>*</sup>, Kevin Zhou, Tengchao Lv.
+Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv.
 <b>EMNLP 2019</b>.
 
 
