@@ -3,7 +3,6 @@ title: "Publications [Google Scholar](https://scholar.google.com/citations?user=
 permalink: /publications/
 author_profile: true
 ---
-<b><sup>*</sup></b>: Equal Contribution,   <b><sup>^</sup></b>: Students Mentored by Me <br>
 
 <br>
 <b>[Multimodal Dialogue Response Generation](https://arxiv.org/abs/2110.08515)</b> <br> 
@@ -17,7 +16,7 @@ ACL 2022
 
 <br><br>
 <b>[Hierarchical attention prototypical networks for few-shot text classification](https://aclanthology.org/D19-1045)</b> <br> 
-Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv <br> 
+Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv (<b><sup>*</sup></b>:  Equal Contribution) <br> 
 EMNLP 2019
 
 
