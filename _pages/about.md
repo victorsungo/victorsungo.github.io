@@ -24,7 +24,7 @@ I'm always looking for highly self-motivated students to work with me as researc
 * 1 paper accepted by EMNLP 2019!
 
 
-# Publications [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en)
+# Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 <br>
 <b>[Multimodal Dialogue Response Generation](https://arxiv.org/abs/2110.08515)</b> <br> 
 <b>Qingfeng Sun</b>, Yujing Wang, Can Xu, Kai Zheng, Yaming Yang, Huang Hu, Fei Xu, Jessica Zhang, Xiubo Geng, Daxin Jiang <br> 
