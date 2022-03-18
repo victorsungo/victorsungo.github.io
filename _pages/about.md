@@ -22,9 +22,6 @@ I'm always looking for highly self-motivated students to work with me as researc
 * 2 papers accepted by ACL 2022!
 * 1 paper accepted by EMNLP 2019!
 
-# Experiences
-* July. 2020 - Now, Research Scientist, Microsoft Software Technology Center at Asia.
-* Sept. 2018 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
 
 # Publications [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en)
 <br>
@@ -42,6 +39,9 @@ ACL 2022
 Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv ( <b><sup>*</sup>:  Equal Contribution</b>) <br> 
 EMNLP 2019
 
+# Experiences
+* July. 2020 - Now, Research Scientist, Microsoft Software Technology Center at Asia.
+* Sept. 2018 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
 
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&cl=ffffff&w=300&t=m"></script>
 
