@@ -17,7 +17,7 @@ redirect_from:
 
 # Hiring
 
-I'm always looking for highly self-motivated students to work with me as research interns. Please email me (qins AT microsoft DOT com) if you have good coding skills and are passionate about deep learning and natural language processing.
+I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing.
 
 # News
 * 2 papers accepted by ACL 2022!
