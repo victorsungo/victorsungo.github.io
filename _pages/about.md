@@ -26,7 +26,21 @@ I'm always looking for highly self-motivated students to work with me as researc
 * July. 2020 - Now, Research Scientist, Microsoft Software Technology Center at Asia.
 * Sept. 2018 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
 
+# Publications [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en)
+<br>
+<b>[Multimodal Dialogue Response Generation](https://arxiv.org/abs/2110.08515)</b> <br> 
+<b>Qingfeng Sun</b>, Yujing Wang, Can Xu, Kai Zheng, Yaming Yang, Huang Hu, Fei Xu, Jessica Zhang, Xiubo Geng, Daxin Jiang <br> 
+ACL 2022
 
+<br><br>
+<b>[PromDA: Prompt-based Data Augmentation for Low-Resource NLU Tasks](https://arxiv.org/abs/2202.12499)</b> <br> 
+Yufei Wang, Can Xu, <b>Qingfeng Sun</b>, Huang Hu, Chongyang Tao, Xiubo Geng, Daxin Jiang <br> 
+ACL 2022
+
+<br><br>
+<b>[Hierarchical attention prototypical networks for few-shot text classification](https://aclanthology.org/D19-1045)</b> <br> 
+Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv ( <b><sup>*</sup>:  Equal Contribution</b>) <br> 
+EMNLP 2019
 
 
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&cl=ffffff&w=300&t=m"></script>
