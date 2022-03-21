@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-# Bio
+# Biography
 * I am a research scientist of Microsoft STCA (Software Technology Center at Asia).
 * I earned my Master’s Degree in Software Engineering from [Peking University](https://www.pku.edu.cn/) in 2020.
-* My research interests include machine learning, natural language processing, information retrieval, and multimodal pre-training. 
+* My research interests include machine learning, natural language processing, and multimodal learning. 
 <!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. -->
 * For years, I contribute core deep models for [Microsoft Bing](https://www.bing.com/?scope=web&mkt=en-US), [Microsoft XiaoIce (微软小冰)](https://www.xiaoice.com/) and [Microsoft Start](https://www.msn.com/en-us/feed).
 
