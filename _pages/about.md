@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # Biography
-* I am a research scientist of Microsoft STCA (Software Technology Center at Asia).
+* I am an applied scientist of Microsoft STCA (Software Technology Center at Asia).
 * I earned my Master’s Degree in Software Engineering from [Peking University](https://english.pku.edu.cn/) in 2020.
 * My research interests include machine learning, natural language processing, and multimodal learning. 
 <!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. -->
