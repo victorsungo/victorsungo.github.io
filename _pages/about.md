@@ -37,7 +37,7 @@ I'm always looking for highly self-motivated students to work with me as researc
   EMNLP 2019
 
 # Experiences
-* July. 2020 - Now, Research Scientist, Microsoft Software Technology Center at Asia.
+* July. 2020 - Now, Applied Scientist, Microsoft Software Technology Center at Asia.
 * Sept. 2018 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
 
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&cl=ffffff&w=300&t=m"></script>
