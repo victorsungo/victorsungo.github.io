@@ -3,12 +3,13 @@ title: "Publications [Google Scholar](https://scholar.google.com/citations?user=
 permalink: /publications/
 author_profile: true
 ---
+
 <br>
 <b>Stylized Knowledge-Grounded Dialogue Generation via Disentangled Template Rewriting </b> <br> 
 <b>Qingfeng Sun</b>, Can Xu, Huang Hu, Yujing Wang, Jian Miao, Xiubo Geng, Yining Chen, Fei Xu,  Daxin Jiang <br> 
 NAACL 2022
 
-<br>
+<br><br>
 <b>[Multimodal Dialogue Response Generation](https://arxiv.org/abs/2110.08515)</b> <br> 
 <b>Qingfeng Sun</b>, Yujing Wang, Can Xu, Kai Zheng, Yaming Yang, Huang Hu, Fei Xu, Jessica Zhang, Xiubo Geng, Daxin Jiang <br> 
 ACL 2022
