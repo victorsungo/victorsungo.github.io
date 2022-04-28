@@ -45,5 +45,9 @@ I'm always looking for highly self-motivated students to work with me as researc
 * July. 2020 - Now, Applied Scientist, Microsoft Software Technology Center at Asia.
 * Sept. 2018 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
 
+# Academic Services
+Program Committee for
+* KDD 2022
+
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&cl=ffffff&w=300&t=m"></script>
 
