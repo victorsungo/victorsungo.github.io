@@ -59,5 +59,5 @@ Program Committee for
 * EMNLP 2022
 * COLING 2022
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&cl=ffffff&w=300&t=m"></script>
-
+<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&cl=ffffff&w=300&t=m"></script> -->
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
