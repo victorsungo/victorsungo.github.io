@@ -24,6 +24,7 @@ yellow { color: yellow }
 I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing.
 
 # News
+* 1 paper accepted by EMNLP 2022!
 * 1 paper accepted by NAACL 2022!
 * 2 papers accepted by ACL 2022!
 * 1 paper accepted by EMNLP 2019!
