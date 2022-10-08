@@ -32,6 +32,9 @@ I'm always looking for highly self-motivated students to work with me as researc
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 
 
+* Knowledge Stimulated Contrastive Prompting for Low-Resource Stance Detection <br>
+  Kai Zheng, <b>Qingfeng Sun</b>, Yaming Yang, Fei Xu <br>
+  EMNLP 2022, Findings
 * [Stylized Knowledge-Grounded Dialogue Generation via Disentangled Template Rewriting](https://arxiv.org/abs/2204.05610)  <br> 
   <b>Qingfeng Sun</b>, Can Xu, Huang Hu, Yujing Wang, Jian Miao, Xiubo Geng, Yining Chen, Fei Xu,  Daxin Jiang <br>
   NAACL 2022 [<red>Oral</red>]
