@@ -19,9 +19,9 @@ yellow { color: yellow }
 <!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. -->
 * For years, I contribute core deep models for [Microsoft Start](https://www.msn.com/en-us/feed), [Bing](https://www.bing.com/?scope=web&mkt=en-US), and [XiaoIce (微软小冰)](https://www.xiaoice.com/).
 
-# Hiring
+<!-- # Hiring
 
-I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing.
+I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing. -->
 
 # News
 * 1 paper accepted by EMNLP 2022!
