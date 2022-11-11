@@ -34,8 +34,8 @@ I'm always looking for highly self-motivated students to work with me as researc
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
-  Jiazhan Feng, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin
-  **Dataset:** https://github.com/victorsungo/MMDialog
+  Jiazhan Feng, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
+  **Dataset:** https://github.com/victorsungo/MMDialog <br> 
   arXiv preprint arXiv:2211.05719
 * [Knowledge Stimulated Contrastive Prompting for Low-Resource Stance Detection]() <br>
   Kai Zheng, <b>Qingfeng Sun</b>, Yaming Yang, Fei Xu <br>
