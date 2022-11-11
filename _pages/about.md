@@ -32,7 +32,7 @@ I'm always looking for highly self-motivated students to work with me as researc
  
 
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
-###  <b><sup>#</sup></b>: The intern i mentored, <b><sup> *</sup></b>: Equal contribution
+###  &nbsp; <b><sup>#</sup></b>: The intern i mentored, <b><sup> *</sup></b>: Equal contribution
 
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
   Jiazhan Feng<b><sup>#</sup></b>, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
