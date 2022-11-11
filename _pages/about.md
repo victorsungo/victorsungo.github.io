@@ -32,7 +32,7 @@ I'm always looking for highly self-motivated students to work with me as researc
  
 
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
-###  <b><sup>#</sup></b>: The intern i mentored, <b><sup> \spadesuit</sup></b>: Equal contribution
+###  <b><sup>#</sup></b>: The intern i mentored, <b><sup> *</sup></b>: Equal contribution
 
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
   Jiazhan Feng<b><sup>#</sup></b>, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
@@ -51,7 +51,7 @@ I'm always looking for highly self-motivated students to work with me as researc
   Yufei Wang, Can Xu, <b>Qingfeng Sun</b>, Huang Hu, Chongyang Tao, Xiubo Geng, Daxin Jiang <br> 
   ACL 2022
 * [Hierarchical Attention Prototypical Networks for Few-Shot Text Classification](https://aclanthology.org/D19-1045) <br> 
-  Shengli Sun<b><sup>\spadesuit</sup></b>, <b>Qingfeng Sun<sup>\spadesuit</sup></b>, Kevin Zhou, Tengchao Lv
+  Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv
   EMNLP 2019
 
 # Experiences
