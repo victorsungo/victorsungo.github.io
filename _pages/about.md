@@ -24,7 +24,7 @@ yellow { color: yellow }
 I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing. -->
 
 # News
-* We release [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719), which is composed of a curated set of 1.08 million real-world dialogues with 1.53 million unique images across 4184 topics! To get this dataset, please refer to: https://github.com/victorsungo/MMDialog 
+* We release [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719), which is composed of a curated set of 1.08 million real-world dialogues with 1.53 million unique images across 4184 topics! To get this dataset, please refer to this link: https://github.com/victorsungo/MMDialog 
 * 1 paper accepted by EMNLP 2022!
 * 1 paper accepted by NAACL 2022 as an Oral paper!
 * 2 papers accepted by ACL 2022!
@@ -34,7 +34,8 @@ I'm always looking for highly self-motivated students to work with me as researc
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
-  Jiazhan Feng, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin   
+  Jiazhan Feng, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin
+  **Dataset:** https://github.com/victorsungo/MMDialog
   arXiv preprint arXiv:2211.05719
 * [Knowledge Stimulated Contrastive Prompting for Low-Resource Stance Detection]() <br>
   Kai Zheng, <b>Qingfeng Sun</b>, Yaming Yang, Fei Xu <br>
