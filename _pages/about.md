@@ -51,7 +51,7 @@ I'm always looking for highly self-motivated students to work with me as researc
   Yufei Wang, Can Xu, <b>Qingfeng Sun</b>, Huang Hu, Chongyang Tao, Xiubo Geng, Daxin Jiang <br> 
   ACL 2022
 * [Hierarchical Attention Prototypical Networks for Few-Shot Text Classification](https://aclanthology.org/D19-1045) <br> 
-  Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv ( <b><sup>*</sup>:  Equal Contribution</b>) <br> 
+  Shengli Sun<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kevin Zhou, Tengchao Lv
   EMNLP 2019
 
 # Experiences
