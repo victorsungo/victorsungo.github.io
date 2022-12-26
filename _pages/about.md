@@ -60,11 +60,12 @@ I'm always looking for highly self-motivated students to work with me as researc
 
 # Academic Services
 Program Committee for
+* ACL 2023
+* EACL 2023
 * KDD 2022
 * EMNLP 2022
 * COLING 2022
-* EACL 2023
-* ACL 2023
+
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss&cl=ffffff&w=300&t=m"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=320&t=tt&d=GIYrAuVIIomuTmW8ySsSiQpWNounHBsNjj1emBKHBss'></script>
