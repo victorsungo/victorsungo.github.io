@@ -34,7 +34,7 @@ I'm always looking for highly self-motivated students to work with me as researc
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 ### &ensp;&ensp;&ensp; <b><sup>#</sup></b>: The intern I mentored, <b><sup> *</sup></b>: Equal contribution
 
-* [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) [**Dataset Link**](https://github.com/victorsungo/MMDialog) <br> 
+* [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
   Jiazhan Feng<b><sup>#</sup></b>, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
   arXiv preprint arXiv:2211.05719
 * [Knowledge Stimulated Contrastive Prompting for Low-Resource Stance Detection](https://aclanthology.org/2022.findings-emnlp.83/) <br>
