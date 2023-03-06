@@ -31,7 +31,7 @@ I'm always looking for highly self-motivated students to work with me as researc
 * 1 paper accepted by EMNLP 2019!
 
 # On-going Research Project
-* ChatGPT/GPT-3.5 in Bing Search
+* LLMs (ChatGPT/GPT-3.5) in Bing Search
 * RLHF/RLAIF
 * Multimodal CoT
  
