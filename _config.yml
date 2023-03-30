@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "Bejing"
-title                    : "Qingfeng Sun (孙庆锋)"
+title                    : "Qingfeng Sun"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Qingfeng Sun"
   avatar           : "qingfeng1.jpg"
-  bio              : "Applied Scientist @ Microsoft"
+  bio              : "Data Scientist @ Microsoft"
   location         : "Beijing"
   employer         :
   pubmed           : 
