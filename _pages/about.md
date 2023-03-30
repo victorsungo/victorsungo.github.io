@@ -13,7 +13,7 @@ yellow { color: yellow }
 </style>
 
 # Biography
-* I am an applied scientist of Microsoft STCA (Software Technology Center at Asia).
+* I am a Data Scientist of Microsoft Software Technology Center at Asia.
 * I earned my Master’s Degree in Software Engineering from [Peking University](https://english.pku.edu.cn/) in 2020.
 * My research interests include machine learning, natural language processing, and multimodal learning. 
 <!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. -->
@@ -31,7 +31,7 @@ I'm always looking for highly self-motivated students to work with me as researc
 * 1 paper accepted by EMNLP 2019!
 
 # On-going Research Project
-* LLMs (ChatGPT/GPT-3.5) in Bing Search
+* LLMs in search engine
 * RLHF/RLAIF
 * Multimodal CoT
  
