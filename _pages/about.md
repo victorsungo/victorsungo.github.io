@@ -66,7 +66,7 @@ I'm always looking for highly self-motivated students to work with me as researc
 Program Committee for
 * ACL 2023
 * EACL 2023
-* KDD 2022
+* KDD 2022, 2023
 * EMNLP 2022
 * COLING 2022
 
