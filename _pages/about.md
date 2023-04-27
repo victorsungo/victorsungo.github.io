@@ -39,9 +39,9 @@ I'm always looking for highly self-motivated students to work with me as researc
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 ### &ensp;&ensp;&ensp; <b><sup> *</sup></b>: Equal contribution, <b><sup>#</sup></b>: The intern I mentored
 
-* [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244) <br> 
+<!-- * [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244) <br> 
   Can Xu<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kai Zheng<b><sup>*</sup></b>, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Daxin Jiang <br> 
-  arXiv preprint arXiv:2304.12244
+  arXiv preprint arXiv:2304.12244 -->
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
   Jiazhan Feng<b><sup>#</sup></b>, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
   arXiv preprint arXiv:2211.05719
