@@ -32,11 +32,6 @@ I'm always looking for highly self-motivated students to work with me as researc
 * 1 paper accepted by NAACL 2022 as an Oral paper!
 * 2 papers accepted by ACL 2022!
 * 1 paper accepted by EMNLP 2019!
-
-# On-going Research Project
-* LLMs in search engine
-* RLHF/RLAIF
-* Multimodal CoT
  
 
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
