@@ -48,7 +48,10 @@ I'm always looking for highly self-motivated students to work with me as researc
   arXiv preprint arXiv:2306.08568
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
   Jiazhan Feng<b><sup>#</sup></b>, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
-  arXiv preprint arXiv:2211.05719
+  ACL 2023
+* [Adversarial Knowledge Stimulated Contrastive Prompting for Few-shot Language Learners](https://aclanthology.org/2023.findings-acl.852/) <br> 
+  Kai Zheng, Qingfeng Sun, Yaming Yang, Tengchao Lv, Yeyong Pi, Changlin Zhao, Fei Xu, Qi Zhang <br>
+  ACL 2023, Findings
 * [Knowledge Stimulated Contrastive Prompting for Low-Resource Stance Detection](https://aclanthology.org/2022.findings-emnlp.83/) <br>
   Kai Zheng, <b>Qingfeng Sun</b>, Yaming Yang, Fei Xu <br>
   EMNLP 2022, Findings
