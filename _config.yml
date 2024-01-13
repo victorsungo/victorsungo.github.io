@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Qingfeng Sun"
   avatar           : "qingfeng1.jpg"
-  bio              : "Data Scientist @ Microsoft"
+  bio              : "NLP Scientist @ Microsoft"
   location         : "Beijing"
   employer         :
   pubmed           : 
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # "academicpages"
+  github           : https://github.com/victorsungo
   google_plus      :
   keybase          :
   instagram        :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : # "replacethistwitterhandle"
+  twitter          : "sun_qingfeng"
   vine             :
   weibo            :
   xing             :
