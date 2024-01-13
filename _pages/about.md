@@ -24,7 +24,10 @@ yellow { color: yellow }
 I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing. -->
 
 # News
+* [Aug 2023] We release [WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct](https://arxiv.org/abs/2304.12244)
+* [Jun 2023] We release [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)
 * [Apr 2023] We release [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244), please refer to project link: [https://github.com/nlpxucan/WizardLM](https://github.com/nlpxucan/WizardLM)
+* 2 papers accepted by ACL 2023!
 * 1 paper accepted by EMNLP 2022!
 * 1 paper accepted by NAACL 2022 as an Oral paper!
 * 2 papers accepted by ACL 2022!
