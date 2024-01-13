@@ -13,18 +13,18 @@ yellow { color: yellow }
 </style>
 
 # Biography
-* I am a Data Scientist of Microsoft Software Technology Center at Asia.
+* I am a NLP Scientist of Microsoft Copilot.
 * I earned my Master’s Degree in Software Engineering from [Peking University](https://english.pku.edu.cn/) in 2020.
-* My research interests include machine learning, natural language processing, and multimodal learning. 
+* My research interests include Natural Language Processing, Reinforcement Learning, and Multimodal LLM. 
 <!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. -->
-* For years, I contribute core deep models for [Microsoft Bing](https://www.bing.com/?scope=web&mkt=en-US), and [XiaoIce (微软小冰)](https://www.xiaoice.com/).
+* For years, I also contribute core deep models for [Microsoft Copilot](https://www.bing.com/search?form=NTPCHB&q=Bing+AI&showconv=1), and [XiaoIce (微软小冰)](https://www.xiaoice.com/).
 
 <!-- # Hiring
 
 I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing. -->
 
 # News
-* We release [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719), which is composed of a curated set of 1.08 million real-world dialogues with 1.53 million unique images across 4184 topics! To get this dataset, please refer to this link: [https://github.com/victorsungo/MMDialog](https://github.com/victorsungo/MMDialog)
+* [Apr 2023] We release [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244), please refer to project link: [https://github.com/nlpxucan/WizardLM](https://github.com/nlpxucan/WizardLM)
 * 1 paper accepted by EMNLP 2022!
 * 1 paper accepted by NAACL 2022 as an Oral paper!
 * 2 papers accepted by ACL 2022!
@@ -39,9 +39,15 @@ I'm always looking for highly self-motivated students to work with me as researc
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 ### &ensp;&ensp;&ensp; <b><sup> *</sup></b>: Equal contribution, <b><sup>#</sup></b>: The intern I mentored
 
-<!-- * [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244) <br> 
-  Can Xu<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kai Zheng<b><sup>*</sup></b>, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Daxin Jiang <br> 
-  arXiv preprint arXiv:2304.12244 -->
+* [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244) <br> 
+  Can Xu<sup>*</sup>, <b>Qingfeng Sun<sup>*</sup></b>, Kai Zheng<sup>*</sup>, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Daxin Jiang <br> 
+  arXiv preprint arXiv:2304.12244
+* [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568) <br> 
+  Ziyang Luo, Can Xu, Pu Zhao, <b>Qingfeng Sun</b>, Xiubo Geng, Wenxiang Hu, Chongyang Tao, Jing Ma, Qingwei Lin, Daxin Jiang <br> 
+  arXiv preprint arXiv:2304.12244
+* [WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct](https://arxiv.org/abs/2304.12244) <br> 
+  Haipeng Luo<sup>*</sup>, <b>Qingfeng Sun<sup>*</sup></b>, Can Xu, Pu Zhao, Jianguang Lou, Chongyang Tao, Xiubo Geng, Qingwei Lin, Shifeng Chen, Dongmei Zhang<br> 
+  arXiv preprint arXiv:2304.12244
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
   Jiazhan Feng<b><sup>#</sup></b>, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
   arXiv preprint arXiv:2211.05719
