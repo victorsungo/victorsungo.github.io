@@ -66,11 +66,12 @@ I'm always looking for highly self-motivated students to work with me as researc
   EMNLP 2019
 
 # Experiences
-* July. 2020 - Now, Data Scientist, Microsoft Software Technology Center at Asia.
-* Sept. 2018 - June. 2020, Research Intern, Core Chat Team, Microsoft XiaoIce.
+* July. 2020 - Now, NLP Scientist, Microsoft Copilot.
+* Sept. 2018 - June. 2020, Research Intern, Microsoft XiaoIce.
 
 # Academic Services
 Program Committee for
+* NAACL 2024
 * ACL 2023
 * EACL 2023
 * KDD 2022, 2023
