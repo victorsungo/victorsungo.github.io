@@ -24,6 +24,7 @@ yellow { color: yellow }
 I'm always looking for highly self-motivated students to work with me as research interns. Please email me if you are passionate about natural language processing. -->
 
 # News
+* 2 papers accepted by ICLR 2024!
 * [Aug 2023] We release [WizardMath](https://arxiv.org/abs/2308.09583).
 * [Jun 2023] We release [WizardCoder](https://arxiv.org/abs/2306.08568).
 * [Apr 2023] We release [WizardLM](https://arxiv.org/abs/2304.12244). Project link: [https://github.com/nlpxucan/WizardLM](https://github.com/nlpxucan/WizardLM)
@@ -39,13 +40,13 @@ I'm always looking for highly self-motivated students to work with me as researc
 
 * [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244) <br> 
   Can Xu<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kai Zheng<b><sup>*</sup></b>, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Daxin Jiang <br> 
-  arXiv preprint arXiv:2304.12244
+  ICLR 2024
+* [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568) <br> 
+  Ziyang Luo, Can Xu, Pu Zhao, <b>Qingfeng Sun</b>, Xiubo Geng, Wenxiang Hu, Chongyang Tao, Jing Ma, Qingwei Lin, Daxin Jiang <br> 
+  ICLR 2024
 * [WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct](https://arxiv.org/abs/2304.12244) <br> 
   Haipeng Luo<b><sup>#*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Can Xu, Pu Zhao, Jianguang Lou, Chongyang Tao, Xiubo Geng, Qingwei Lin, Shifeng Chen, Dongmei Zhang<br> 
   arXiv preprint arXiv:2308.09583
-* [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568) <br> 
-  Ziyang Luo, Can Xu, Pu Zhao, <b>Qingfeng Sun</b>, Xiubo Geng, Wenxiang Hu, Chongyang Tao, Jing Ma, Qingwei Lin, Daxin Jiang <br> 
-  arXiv preprint arXiv:2306.08568
 * [MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal Open-domain Conversation](https://arxiv.org/abs/2211.05719) <br> 
   Jiazhan Feng<b><sup>#</sup></b>, <b>Qingfeng Sun</b>, Can Xu, Pu Zhao, Yaming Yang, Chongyang Tao, Dongyan Zhao, Qingwei Lin <br> 
   ACL 2023
