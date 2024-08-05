@@ -14,7 +14,7 @@ yellow { color: yellow }
 
 # Biography
 * I am a Research Scientist at Microsoft AI. I earned my Master’s Degree from [Peking University](https://english.pku.edu.cn/) in 2020.
-* I co-founded WizardLM project, which contributed the state-of-the-art LLMs such as WizardLM, WizardCoder and WizardMath, I also created wildly used methods including Evol-Instruct, RLEIF and Arena-Learning.
+* I co-founded [WizardLM](https://github.com/nlpxucan/WizardLM) project, which contributed the state-of-the-art LLMs **WizardLM**, **WizardCoder** and **WizardMath**, I also created widely adopted methods [Evol-Instruct](https://github.com/nlpxucan/WizardLM/tree/main/Evol_Instruct), [RLEIF](https://arxiv.org/abs/2308.09583) and [Arena-Learning](https://arxiv.org/abs/2304.12244).
 * My research interests include Natural Language Processing, Reinforcement Learning, and Multimodal LLM. 
 <!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. * For years, I also contribute core deep models for [Microsoft Copilot](https://www.bing.com/search?form=NTPCHB&q=Bing+AI&showconv=1), and [XiaoIce](https://www.xiaoice.com/).-->
 
