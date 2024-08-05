@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "Bejing"
+locale                   : ""
 title                    : "Qingfeng Sun"
 title_separator          : "-"
 name                     : &name "Your Name"
@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Qingfeng Sun"
-  avatar           : "qingfeng1.jpg"
-  bio              : "NLP Scientist @ Microsoft"
-  location         : "Beijing"
+  avatar           : #"qingfeng1.jpg"
+  bio              : "Research Scientist @ Microsoft"
+  location         : ""
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "sun_qingfeng"
+  twitter          : "victorsungo"
   vine             :
   weibo            :
   xing             :
