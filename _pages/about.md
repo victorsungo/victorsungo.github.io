@@ -13,11 +13,11 @@ yellow { color: yellow }
 </style>
 
 # Biography
-* I am a NLP Scientist of Microsoft Copilot.
-* I earned my Master’s Degree in Software Engineering from [Peking University](https://english.pku.edu.cn/) in 2020.
+* I am a Research Scientist at Microsoft AI. I earned my Master’s Degree from [Peking University](https://english.pku.edu.cn/) in 2020.
+* I co-founded WizardLM project, which contributed the state-of-the-art LLMs such as WizardLM, WizardCoder and WizardMath, I also created wildly used methods including Evol-Instruct, RLEIF and Arena-Learning.
 * My research interests include Natural Language Processing, Reinforcement Learning, and Multimodal LLM. 
-<!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. -->
-* For years, I also contribute core deep models for [Microsoft Copilot](https://www.bing.com/search?form=NTPCHB&q=Bing+AI&showconv=1), and [XiaoIce (微软小冰)](https://www.xiaoice.com/).
+<!-- * More details, please refer to [Publications](https://victorsungo.github.io/publications/) tab. * For years, I also contribute core deep models for [Microsoft Copilot](https://www.bing.com/search?form=NTPCHB&q=Bing+AI&showconv=1), and [XiaoIce](https://www.xiaoice.com/).-->
+
 
 <!-- # Hiring
 
@@ -38,6 +38,12 @@ I'm always looking for highly self-motivated students to work with me as researc
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
 ### &ensp;&ensp;&ensp; <b><sup> *</sup></b>: Equal contribution, <b><sup>#</sup></b>: The intern I mentored
 
+* [Arena Learning: Build Data Flywheel for LLMs Post-training via Simulated Chatbot Arena](https://arxiv.org/abs/2407.10627) <br> 
+  Haipeng Luo<b><sup>#*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Can Xu, Pu Zhao, Qingwei Lin, Jianguang Lou, Shifeng Chen, Yansong Tang, Weizhu Chen<br> 
+  arXiv preprint arXiv:2407.10627
+* [AgentGen: Enhancing Planning Abilities for Large Language Model based Agent via Environment and Task Generation](https://arxiv.org/abs/2408.00764) <br> 
+  Mengkang Hu, Pu Zhao, Can Xu, <b>Qingfeng Sun</b>, Jianguang Lou, Qingwei Lin, Ping Luo, Saravan Rajmohan, Dongmei Zhang<br> 
+  arXiv preprint arXiv:2408.00764
 * [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244) <br> 
   Can Xu<b><sup>*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Kai Zheng<b><sup>*</sup></b>, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Daxin Jiang <br> 
   ICLR 2024
@@ -70,11 +76,12 @@ I'm always looking for highly self-motivated students to work with me as researc
   EMNLP 2019
 
 # Experiences
-* July. 2020 - Now, NLP Scientist, Microsoft Copilot.
+* July. 2020 - Now, Research Scientist, Microsoft AI.
 * Sept. 2018 - June. 2020, Research Intern, Microsoft XiaoIce.
 
 # Academic Services
 Program Committee for
+* NeurIPS 2024
 * NAACL 2024
 * ACL 2023
 * EACL 2023
