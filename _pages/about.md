@@ -36,7 +36,7 @@ I'm always looking for highly self-motivated students to work with me as researc
  
 
 # Publications <!--  [Google Scholar](https://scholar.google.com/citations?user=GLMKUEwAAAAJ&hl=en) -->
-### &ensp;&ensp;&ensp; <b><sup> (*</sup></b>: Equal contribution, <b><sup>#</sup></b>: The intern I mentored)
+### &ensp;&ensp;&ensp; (<b><sup> *</sup></b>: Equal contribution, <b><sup>#</sup></b>: The intern I mentored)
 
 * [Arena Learning: Build Data Flywheel for LLMs Post-training via Simulated Chatbot Arena](https://arxiv.org/abs/2407.10627) <br> 
   Haipeng Luo<b><sup>#*</sup></b>, <b>Qingfeng Sun<sup>*</sup></b>, Can Xu, Pu Zhao, Qingwei Lin, Jianguang Lou, Shifeng Chen, Yansong Tang, Weizhu Chen<br> 
